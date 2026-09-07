@@ -10,6 +10,8 @@ Registry refresh commits are grouped instead of listed individually.
 
 ### Fixed and improved
 
+- Refined navigation, filter bars, cards, management panels, button sizing, keyboard focus, and light/dark theme support, with responsive action layouts and a distinct uninstall treatment.
+- Added result counts and filter reset, improved empty/loading feedback, and kept batch selection counts and actions consistent across filters, including explicitly indicated hidden selections.
 - Explicit Registry refreshes preserve the last valid snapshot and ETag, and concurrent refreshes share one request.
 - HTTP 304 responses still refresh discovery metadata and lookup indexes; unreadable bundled snapshots fall back to the remote Registry.
 - Automatically selected GitHub tags and branches resolve to a commit before reading package files, removing duplicate manual-install reads.
@@ -18,6 +20,7 @@ Registry refresh commits are grouped instead of listed individually.
 
 ### Tests
 
+- Added browser regressions using real React/DSH components and mock data for layouts, themes, filters, selections, and confirmations, without touching a real Profile.
 - Added regression coverage for conditional requests, offline recovery, concurrent refreshes, automatic ref pinning, encapsulated manifests, and Windows cleanup failures.
 
 ## [0.9.4] - 2026-09-02

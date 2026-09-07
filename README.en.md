@@ -136,6 +136,13 @@ Install, update, and uninstall share one FIFO plugin-operation queue. It appears
 
 Installed plugins can be selected from the current filtered view and updated, enabled, disabled, or uninstalled in bulk. A batch accepts at most 50 plugins; bulk enable checks the combined state for newly introduced conflicts, and bulk enable/disable writes the Profile manifest once.
 
+Search and state filters can be reset in one click. Selections persist across filters; hidden selected plugins are
+explicitly indicated and remain included in batch actions. **Clear selection** clears every selected plugin.
+
+The interface follows DSH light and dark themes, separates navigation, filters, and actions, and adapts cards,
+buttons, and management panels to narrow windows. Uninstall actions have a distinct danger treatment while
+installation and batch actions retain the existing confirmation flow.
+
 Once a custom-directory uninstall has removed the Profile association, file cleanup failures leave the plugin
 uninstalled and log the residual paths for cleanup after restart. They never reattach potentially partially deleted
 files. Cleanup of old backups and staging directories likewise cannot undo a completed installation.
@@ -328,6 +335,13 @@ pnpm build
 pnpm verify
 pnpm typecheck
 ```
+
+Run `pnpm ui:test` with an existing DSH checkout containing esbuild, React and Playwright, plus a local Chromium.
+It checks light/dark themes, narrow layouts, Chinese/English labels, filters, batch selection and confirmation flows,
+and refreshes the previews in [`docs/screenshots`](./docs/screenshots). Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`
+if the browser is outside Playwright's default location. The test does not download dependencies and uses an isolated
+page with mock data; it does not modify real Profiles or install plugins. Integration with the actual DSH host still
+requires verification in DSH.
 
 Before a release, update the version, regenerate the Registry, rebuild `lib/`, commit the generated artifacts, and create a version tag.
 

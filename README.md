@@ -133,6 +133,12 @@ Agent 会先只读检查精确 commit。执行安装、构建、`prepare`、`pos
 
 已安装插件支持按当前筛选结果选择，并批量更新、启用、停用或卸载。单批最多处理 50 个插件；批量启用会先检查组合后的新增冲突，批量启用/停用只写入一次 Profile manifest。
 
+搜索和状态筛选支持一键重置。已选插件会跨筛选保留；有已选项被隐藏时，面板会明确提示，
+批量操作仍包含这些已选插件。点击“清空选择”可一次取消全部选择。
+
+界面沿用 DSH 明暗主题。导航、搜索筛选、插件操作分区展示；窄窗口下，卡片、操作按钮和管理
+面板自动换行。卸载使用独立的危险操作样式，安装与批量操作继续使用原有确认流程。
+
 自定义目录卸载完成 Profile 解除关联后，若 Windows 文件占用导致实体清理失败，插件仍保持已卸载，
 任务日志会列出残留路径，供重启后清理；不会重新关联可能已被部分删除的文件。安装成功后的旧备份
 和临时目录清理失败同样只记录警告，不撤销已经完成的安装。
@@ -323,6 +329,12 @@ pnpm build
 pnpm verify
 pnpm typecheck
 ```
+
+界面回归使用 DSH checkout 中已有的 `esbuild`、React、Playwright 和本机 Chromium，不会自动下载依赖。
+执行 `pnpm ui:test` 可检查明暗主题、窄窗口、中英文、筛选与批量选择、安装/卸载确认，并更新
+[`docs/screenshots/marketplace-refresh-light.png`](./docs/screenshots/marketplace-refresh-light.png) 等预览。
+若浏览器不在 Playwright 默认位置，可设置 `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`。测试使用模拟数据和
+隔离页面，不会操作真实 Profile 或安装插件；真实宿主集成仍需在 DSH 中验证。
 
 发布前需要更新版本、重新生成 Registry、构建 `lib/`，然后提交产物并创建版本标签。
 
