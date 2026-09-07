@@ -136,6 +136,10 @@ Install, update, and uninstall share one FIFO plugin-operation queue. It appears
 
 Installed plugins can be selected from the current filtered view and updated, enabled, disabled, or uninstalled in bulk. A batch accepts at most 50 plugins; bulk enable checks the combined state for newly introduced conflicts, and bulk enable/disable writes the Profile manifest once.
 
+Once a custom-directory uninstall has removed the Profile association, file cleanup failures leave the plugin
+uninstalled and log the residual paths for cleanup after restart. They never reattach potentially partially deleted
+files. Cleanup of old backups and staging directories likewise cannot undo a completed installation.
+
 Update detection is not limited to version numbers. For a plugin installed from an exact GitHub source, a different Registry-verified commit is offered as an update even when the Registry version is unchanged. npm sources continue to use verified exact release versions.
 
 The catalog first renders the bundled Registry snapshot and a lightweight Profile dependency list while refreshing the remote Registry in the background. Full installed metadata is scanned only when needed. **Check updates** bypasses the cache, and the default `node_modules` is no longer walked for unlinked directories.
@@ -214,6 +218,10 @@ dsh --profile web
 ```
 
 You may also set `registryUrl` in the plugin configuration. Remote content is cached in memory for 15 minutes and supports ETag. A refresh failure first uses the most recent valid response and then falls back to the bundled snapshot. Configure the cache with `registryCacheMinutes`; `registryRequestTimeoutMs` applies to both Registry and install-time GitHub requests.
+
+Explicit refreshes bypass the TTL while retaining the ETag and last valid snapshot, and concurrent checks share one
+request. HTTP 304 responses still refresh categories and Star growth; unavailable optional discovery data preserves
+existing values. If the initial bundled snapshot is missing or invalid, the client tries the remote Registry.
 
 A custom Registry may omit `discovery.json` and `guided-audit.json`:
 

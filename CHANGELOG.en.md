@@ -8,7 +8,17 @@ Registry refresh commits are grouped instead of listed individually.
 
 ## [Unreleased]
 
-No unreleased changes yet.
+### Fixed and improved
+
+- Explicit Registry refreshes preserve the last valid snapshot and ETag, and concurrent refreshes share one request.
+- HTTP 304 responses still refresh discovery metadata and lookup indexes; unreadable bundled snapshots fall back to the remote Registry.
+- Automatically selected GitHub tags and branches resolve to a commit before reading package files, removing duplicate manual-install reads.
+- Plugins that encapsulate `package.json` with `exports` now participate in version, bundle, and conflict checks.
+- Cleanup failures after a completed install or Profile unlink log residual paths without rolling back to potentially partially deleted files.
+
+### Tests
+
+- Added regression coverage for conditional requests, offline recovery, concurrent refreshes, automatic ref pinning, encapsulated manifests, and Windows cleanup failures.
 
 ## [0.9.4] - 2026-09-02
 
