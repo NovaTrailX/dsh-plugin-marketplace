@@ -54,10 +54,19 @@ const installedEntries = [
 const fixtureState = { installs: 0, uninstalls: 0, searches: 0, uninstallBatches: [] as string[][] }
 ;(window as unknown as { __marketplaceFixture?: typeof fixtureState }).__marketplaceFixture = fixtureState
 
+// 密度回归用多行插件，避免只有三个样本时漏掉滚动距离问题。
+const previewCatalog = new URLSearchParams(window.location.search).has('density')
+  ? Array.from({ length: 12 }, (_, index) => {
+      const item = catalog[index % catalog.length]!
+      const repo = `${item.repo}-${index + 1}`
+      return { ...item, repo, fullName: `${item.owner}/${repo}`, packageName: `@dsh/${repo}` }
+    })
+  : catalog
+
 function search(query: string, _page: number, _sort: string, category: string) {
   fixtureState.searches += 1
   const needle = query.trim().toLocaleLowerCase()
-  const items = catalog.filter((item) => {
+  const items = previewCatalog.filter((item) => {
     const matchQuery = needle === '' || [item.repo, item.owner, item.description, ...item.topics].some((value) => value.toLocaleLowerCase().includes(needle))
     const matchCategory = category === 'all' || item.categories.includes(category as (typeof item.categories)[number])
     return matchQuery && matchCategory

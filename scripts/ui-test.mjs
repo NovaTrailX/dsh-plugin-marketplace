@@ -162,8 +162,34 @@ try {
   await page.getByRole('button', { name: 'Installed plugins', exact: true }).click()
   await page.locator('.mkt-installed-card').first().waitFor()
   await noOverflow('English installed 360')
+
+  // 复现设置侧栏挤占宽度后的内容区，检查实际可见数量，而非只检查无溢出。
+  await page.goto(url + '/?density=1')
+  await page.locator('.mkt-card').nth(11).waitFor()
+  for (const width of [490, 556]) {
+    await page.setViewportSize({ width: width + 32, height: 794 })
+    await noOverflow('dense catalog ' + width)
+    const cards = await page.locator('.mkt-card').evaluateAll(elements => elements.map(element => {
+      const { x, y, bottom, height } = element.getBoundingClientRect()
+      return { x, y, bottom, height }
+    }))
+    assert.equal(cards[0].y, cards[1].y, width + 'px 应显示两列')
+    assert.ok(cards[1].x > cards[0].x)
+    assert.ok(cards.every(card => card.height <= 220), '默认卡片无需大块留白')
+    const visibleCount = cards.filter(card => card.y >= 0 && card.bottom <= 794).length
+    assert.ok(visibleCount >= 4, width + 'px 首屏应至少完整显示四个插件')
+    console.log(`内容区 ${width}px：双列，卡片 ${cards[0].height}px，首屏完整显示 ${visibleCount} 个插件`)
+  }
+  await page.screenshot({ path: join(screenshots, 'marketplace-refresh-density.png'), animations: 'disabled' })
+  await page.getByRole('button', { name: '详情', exact: true }).first().click()
+  await page.getByRole('button', { name: '详情', exact: true }).first().getAttribute('aria-expanded').then(value => assert.equal(value, 'true'))
+  await noOverflow('dense expanded details')
+  await page.goto(url + '/?density=1&lang=en')
+  await page.setViewportSize({ width: 522, height: 794 })
+  await page.locator('.mkt-card').nth(11).waitFor()
+  await noOverflow('English dense catalog 490')
   assert.deepEqual(pageErrors, [], '浏览器不应出现未捕获异常')
-  console.log('UI 回归通过：明暗主题、3种宽度、中英文、筛选重置、跨筛选选择和安装/卸载确认。')
+  console.log('UI 回归通过：明暗主题、不同面板宽度与展示密度、中英文、筛选重置、跨筛选选择和安装/卸载确认。')
 } finally {
   await browser?.close()
   if (server?.listening) await new Promise(resolve => server.close(resolve))

@@ -10,6 +10,7 @@ Registry refresh commits are grouped instead of listed individually.
 
 ### Fixed and improved
 
+- Increased catalog density: two columns from 490px of content width, no fixed minimum card height, and tighter card/filter spacing. A 12-plugin fixture checks that at least four plugins fit fully in a 794px-high viewport.
 - Refined navigation, filter bars, cards, management panels, button sizing, keyboard focus, and light/dark theme support, with responsive action layouts and a distinct uninstall treatment.
 - Added result counts and filter reset, improved empty/loading feedback, and kept batch selection counts and actions consistent across filters, including explicitly indicated hidden selections.
 - Explicit Registry refreshes preserve the last valid snapshot and ETag, and concurrent refreshes share one request.

@@ -142,6 +142,7 @@ explicitly indicated and remain included in batch actions. **Clear selection** c
 The interface follows DSH light and dark themes, separates navigation, filters, and actions, and adapts cards,
 buttons, and management panels to narrow windows. Uninstall actions have a distinct danger treatment while
 installation and batch actions retain the existing confirmation flow.
+Compact cards fit two columns in a content area of at least 490px, with reduced card padding and filter spacing to shorten scrolling through long lists.
 
 Once a custom-directory uninstall has removed the Profile association, file cleanup failures leave the plugin
 uninstalled and log the residual paths for cleanup after restart. They never reattach potentially partially deleted
