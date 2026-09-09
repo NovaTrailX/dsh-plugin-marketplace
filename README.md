@@ -152,7 +152,7 @@ npm 包内附带构建后的 `lib/` 和发布时的 Registry 快照。因此远�
 
 ## 安装位置、Agent 工作区与冲突诊断
 
-默认情况下，插件实体由 pnpm 直接安装在当前 Profile 的 `node_modules` 中，所有 pnpm 任务都复用该 Profile 已绑定的 store，避免出现 `ERR_PNPM_UNEXPECTED_STORE`。市场会归一化旧 Profile 中被重复放大的 Windows 分隔符，并把 `.modules.yaml` 记录的实际 `vN` 目录转换回 pnpm Store 根目录，防止生成嵌套 Store。
+默认情况下，插件实体由 pnpm 直接安装在当前 Profile 的 `node_modules` 中，所有 pnpm 任务都复用该 Profile 已绑定的 store，避免出现 `ERR_PNPM_UNEXPECTED_STORE`。市场会归一化 Windows 路径分隔符，并原样传递 `.modules.yaml` 记录的实际 Store 路径，保留 `vN` 后缀和已有嵌套目录。后台 pnpm 使用非交互模式，安装与回滚可以重建依赖目录并更新锁文件；调用方显式要求冻结锁文件时保留该要求。
 
 安装位置面板允许把后续安装切换到自定义目录（通过 DSH 的目录选择器）：
 

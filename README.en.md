@@ -156,7 +156,7 @@ The package includes the built `lib/` files and a Registry snapshot from the rel
 
 ## Install location, Agent workspace, and conflict diagnostics
 
-By default, plugin entities are installed by pnpm directly into the current Profile's `node_modules`, and every pnpm job reuses the store the Profile is bound to, avoiding `ERR_PNPM_UNEXPECTED_STORE`. Repeated Windows separators in legacy Profile metadata are collapsed, and the actual `vN` directory recorded by `.modules.yaml` is converted back to the pnpm Store root so nested Stores are not created.
+By default, plugin entities are installed by pnpm directly into the current Profile's `node_modules`, and every pnpm job reuses the store the Profile is bound to, avoiding `ERR_PNPM_UNEXPECTED_STORE`. Windows path separators are normalized, then the actual Store path recorded by `.modules.yaml` is passed unchanged, including its `vN` suffix and existing nested directories. Background pnpm jobs run non-interactively; installs and rollbacks can recreate dependencies and update the lockfile, while explicit frozen-lockfile requests remain enforced.
 
 The install-location panel can switch subsequent installs to a custom directory through DSH's directory picker:
 
