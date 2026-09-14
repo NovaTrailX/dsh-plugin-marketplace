@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T19:22:43.401Z",
+  "generatedAt": "2026-09-14T23:08:40.826Z",
   "windowDays": 7,
   "plugins": [
     {
@@ -10,7 +10,7 @@
         "data",
         "agents"
       ],
-      "starGrowth7d": 6
+      "starGrowth7d": 7
     },
     {
       "fullName": "01Virex/dsh-deepshub",
@@ -2032,7 +2032,7 @@
       "categories": [
         "other"
       ],
-      "starGrowth7d": 2
+      "starGrowth7d": 3
     },
     {
       "fullName": "a1073097082/dsh-model-search",
@@ -2108,7 +2108,7 @@
         "agents",
         "ui"
       ],
-      "starGrowth7d": 87
+      "starGrowth7d": 88
     },
     {
       "fullName": "a1swg1159-pixel/dsh-arcaea-theme",
@@ -4022,7 +4022,7 @@
       "categories": [
         "ui"
       ],
-      "starGrowth7d": 3
+      "starGrowth7d": 2
     },
     {
       "fullName": "alison-xx/deepseek-harness-flow",
@@ -7699,7 +7699,7 @@
       "categories": [
         "ui"
       ],
-      "starGrowth7d": 2
+      "starGrowth7d": 3
     },
     {
       "fullName": "bill9109/dsh-webbridge",
@@ -8345,7 +8345,7 @@
         "ui",
         "developer-tools"
       ],
-      "starGrowth7d": 62
+      "starGrowth7d": 63
     },
     {
       "fullName": "BoWuGit/dsh-reasoning",
@@ -9474,7 +9474,7 @@
         "developer-tools",
         "models"
       ],
-      "starGrowth7d": 167
+      "starGrowth7d": 168
     },
     {
       "fullName": "CCCq-C/dsh-api-cost",
@@ -14099,7 +14099,7 @@
         "security",
         "data"
       ],
-      "starGrowth7d": 19
+      "starGrowth7d": 20
     },
     {
       "fullName": "dhicoc/dsh-theme-mineradio",
@@ -15131,7 +15131,7 @@
         "agents",
         "data"
       ],
-      "starGrowth7d": 62
+      "starGrowth7d": 61
     },
     {
       "fullName": "dream12347/dsh-session-manager",
@@ -15292,7 +15292,7 @@
       "categories": [
         "data"
       ],
-      "starGrowth7d": 573
+      "starGrowth7d": 576
     },
     {
       "fullName": "dsh-mixxed/dsh-client-ui-filesystem",
@@ -19179,7 +19179,7 @@
         "agents",
         "integrations"
       ],
-      "starGrowth7d": 55
+      "starGrowth7d": 56
     },
     {
       "fullName": "FUSU123fusu/dsh-tui-checkpoints",
@@ -19438,7 +19438,7 @@
         "ui",
         "data"
       ],
-      "starGrowth7d": 41
+      "starGrowth7d": 44
     },
     {
       "fullName": "fyy99/dsh-livis-connector",
@@ -20668,8 +20668,7 @@
       "fullName": "GooDAnDReaDY/dsh-issue-reporter",
       "categories": [
         "developer-tools",
-        "observability",
-        "ui"
+        "observability"
       ],
       "starGrowth7d": 0
     },
@@ -20720,6 +20719,14 @@
         "integrations"
       ],
       "starGrowth7d": 3
+    },
+    {
+      "fullName": "GooDAnDReaDY/dsh-model-search",
+      "categories": [
+        "models",
+        "data"
+      ],
+      "starGrowth7d": 0
     },
     {
       "fullName": "GooDAnDReaDY/dsh-model-sync",
@@ -20807,7 +20814,7 @@
       "categories": [
         "models"
       ],
-      "starGrowth7d": 1
+      "starGrowth7d": 2
     },
     {
       "fullName": "GooodWei/arcana",
@@ -21757,7 +21764,7 @@
         "developer-tools",
         "models"
       ],
-      "starGrowth7d": 10
+      "starGrowth7d": 11
     },
     {
       "fullName": "hancao97/hanai-investment-dsh",
@@ -29687,7 +29694,7 @@
         "observability",
         "models"
       ],
-      "starGrowth7d": 12
+      "starGrowth7d": 13
     },
     {
       "fullName": "KeqingMoe/dsh-feng-gu",
@@ -31280,7 +31287,7 @@
         "developer-tools",
         "agents"
       ],
-      "starGrowth7d": 21
+      "starGrowth7d": 22
     },
     {
       "fullName": "kyya/dsh-deepseek-balance",
@@ -33138,7 +33145,7 @@
       "categories": [
         "developer-tools"
       ],
-      "starGrowth7d": 42
+      "starGrowth7d": 43
     },
     {
       "fullName": "liangxiaobing520/dsh-local-vector-memory",
@@ -33977,7 +33984,7 @@
       "categories": [
         "agents"
       ],
-      "starGrowth7d": 26
+      "starGrowth7d": 27
     },
     {
       "fullName": "liqichen/dsh-plugin-manager",
@@ -34353,7 +34360,7 @@
         "media",
         "developer-tools"
       ],
-      "starGrowth7d": 67
+      "starGrowth7d": 66
     },
     {
       "fullName": "liustack/modsearch",
@@ -38322,7 +38329,7 @@
       "categories": [
         "developer-tools"
       ],
-      "starGrowth7d": 534
+      "starGrowth7d": 535
     },
     {
       "fullName": "mexiaosqwq/dsh-web-mobile",
@@ -38445,14 +38452,14 @@
       "categories": [
         "agents"
       ],
-      "starGrowth7d": 12
+      "starGrowth7d": 13
     },
     {
       "fullName": "MichengAI/dsh-archive-manager",
       "categories": [
         "ui"
       ],
-      "starGrowth7d": 16
+      "starGrowth7d": 15
     },
     {
       "fullName": "MichengAI/dsh-automation",
@@ -38740,7 +38747,7 @@
       "categories": [
         "developer-tools"
       ],
-      "starGrowth7d": 307
+      "starGrowth7d": 310
     },
     {
       "fullName": "Minglink/dsh-stream-market",
@@ -40920,7 +40927,7 @@
         "agents",
         "developer-tools"
       ],
-      "starGrowth7d": 219
+      "starGrowth7d": 220
     },
     {
       "fullName": "NanmiCoder/dsh-auto-mode",
@@ -41572,7 +41579,7 @@
         "developer-tools",
         "ui"
       ],
-      "starGrowth7d": 0
+      "starGrowth7d": 1
     },
     {
       "fullName": "nguyenduclong-ict/dsh-session-progress",
@@ -42947,7 +42954,7 @@
         "agents",
         "developer-tools"
       ],
-      "starGrowth7d": 216
+      "starGrowth7d": 217
     },
     {
       "fullName": "omdsh-dev/dsh-better-workbench",
@@ -43544,6 +43551,13 @@
       "fullName": "oodzchen/deepseek-harness-gui",
       "categories": [
         "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "OoJae/dsh-technocore-watch",
+      "categories": [
+        "agents"
       ],
       "starGrowth7d": 0
     },
@@ -44879,7 +44893,7 @@
         "developer-tools",
         "observability"
       ],
-      "starGrowth7d": 43
+      "starGrowth7d": 44
     },
     {
       "fullName": "PerryLink/dsh-library",
@@ -44997,7 +45011,7 @@
         "data",
         "observability"
       ],
-      "starGrowth7d": 38
+      "starGrowth7d": 39
     },
     {
       "fullName": "PerryLink/dsh-score",
@@ -45154,7 +45168,7 @@
         "models",
         "integrations"
       ],
-      "starGrowth7d": 2
+      "starGrowth7d": 3
     },
     {
       "fullName": "Phant0Meow/dsh-meow-cachebilling",
@@ -45170,7 +45184,7 @@
         "agents",
         "developer-tools"
       ],
-      "starGrowth7d": 16
+      "starGrowth7d": 17
     },
     {
       "fullName": "Phant0Meow/dsh-meow-smooth",
@@ -49537,7 +49551,7 @@
       "categories": [
         "models"
       ],
-      "starGrowth7d": 164
+      "starGrowth7d": 166
     },
     {
       "fullName": "seconic037/dsh-proxy-panel",
@@ -50045,7 +50059,7 @@
         "developer-tools",
         "integrations"
       ],
-      "starGrowth7d": 149
+      "starGrowth7d": 150
     },
     {
       "fullName": "shaoeric/dsh-suggest",
@@ -52276,10 +52290,26 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "SpookySandwich/dsh-plugin-message-edit",
+      "categories": [
+        "ui",
+        "models"
+      ],
+      "starGrowth7d": 1
+    },
+    {
       "fullName": "SpookySandwich/dsh-plugin-no-workspace",
       "categories": [
         "developer-tools",
         "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "SpookySandwich/dsh-plugin-rollout-scout",
+      "categories": [
+        "models",
+        "developer-tools"
       ],
       "starGrowth7d": 0
     },
@@ -52392,6 +52422,13 @@
       "starGrowth7d": 1
     },
     {
+      "fullName": "squirrelbullet/dsh-client-ui-vibecontroller",
+      "categories": [
+        "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "Srien11/dsh-sidecar",
       "categories": [
         "other"
@@ -52403,6 +52440,21 @@
       "categories": [
         "agents",
         "developer-tools"
+      ],
+      "starGrowth7d": 1
+    },
+    {
+      "fullName": "sryimnoob123/dsh-tool-pwsh-safe",
+      "categories": [
+        "developer-tools"
+      ],
+      "starGrowth7d": 1
+    },
+    {
+      "fullName": "sryimnoob123/dsh-web-search-ollama",
+      "categories": [
+        "models",
+        "data"
       ],
       "starGrowth7d": 1
     },
@@ -52426,6 +52478,14 @@
       "fullName": "sshhhll002/dsh-remote-gpu-monitoring",
       "categories": [
         "observability"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "ssjob123/dsh-file-panel-left",
+      "categories": [
+        "ui",
+        "developer-tools"
       ],
       "starGrowth7d": 0
     },
@@ -52491,6 +52551,13 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "StabCut/dsh-plugin-restart-desktop",
+      "categories": [
+        "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "staff-os/dsh-dify",
       "categories": [
         "agents",
@@ -52520,6 +52587,13 @@
         "agents"
       ],
       "starGrowth7d": 0
+    },
+    {
+      "fullName": "Star-Guest/dsh-plugin-tavern",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 1
     },
     {
       "fullName": "StarChen-Cycler/octie-dsh-plugin",
@@ -52704,6 +52778,13 @@
         "data",
         "developer-tools",
         "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "stark-L-1/dsh-peer-mailbox",
+      "categories": [
+        "other"
       ],
       "starGrowth7d": 0
     },
@@ -52987,6 +53068,15 @@
       "fullName": "striveh/dsh-capability-resolver",
       "categories": [
         "developer-tools"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "striveh/dsh-llm-call-inspector",
+      "categories": [
+        "models",
+        "developer-tools",
+        "security"
       ],
       "starGrowth7d": 0
     },
@@ -53312,6 +53402,13 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "sumarilkkxx/dsh-atlas",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "SummerSec/dsh-web-auth",
       "categories": [
         "security"
@@ -53323,6 +53420,13 @@
       "categories": [
         "observability",
         "integrations"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "sunchendd/dsh-config-export",
+      "categories": [
+        "developer-tools"
       ],
       "starGrowth7d": 0
     },
@@ -53446,11 +53550,26 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "suntianc/dsh-antigravity-auth",
+      "categories": [
+        "security",
+        "models"
+      ],
+      "starGrowth7d": 6
+    },
+    {
       "fullName": "suntianc/dsh-codex-auth",
       "categories": [
         "developer-tools",
         "models",
         "security"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "suntianc/dsh-ui-settings-icons",
+      "categories": [
+        "ui"
       ],
       "starGrowth7d": 0
     },
@@ -53468,7 +53587,7 @@
         "media",
         "ui"
       ],
-      "starGrowth7d": 5
+      "starGrowth7d": 6
     },
     {
       "fullName": "sunyuhuirong/deepseek-account",
@@ -53580,7 +53699,7 @@
         "agents",
         "developer-tools"
       ],
-      "starGrowth7d": 39
+      "starGrowth7d": 40
     },
     {
       "fullName": "superdesigndev/treg",
@@ -53748,7 +53867,7 @@
       "categories": [
         "observability"
       ],
-      "starGrowth7d": 7
+      "starGrowth7d": 8
     },
     {
       "fullName": "Sutera-Diffusus/dsh-windows-notify",
@@ -53838,6 +53957,14 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "swarm-apps/dsh-swarmdrop",
+      "categories": [
+        "developer-tools",
+        "agents"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "swaylq/dsh-digipet",
       "categories": [
         "agents",
@@ -53872,6 +53999,13 @@
       "fullName": "SweetCandy-gift/dsh-beige-theme",
       "categories": [
         "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "swell05/dsh-whale-tank",
+      "categories": [
+        "developer-tools"
       ],
       "starGrowth7d": 0
     },
@@ -53977,6 +54111,14 @@
       "categories": [
         "data",
         "developer-tools"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "syncended/deepseek-harness-automations",
+      "categories": [
+        "agents",
+        "integrations"
       ],
       "starGrowth7d": 0
     },
@@ -54313,6 +54455,13 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "tang-zhilei/dsh-group-chat-view",
+      "categories": [
+        "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "TANGBINGBINGING/dsh-session-delete",
       "categories": [
         "developer-tools"
@@ -54493,7 +54642,7 @@
       "categories": [
         "data"
       ],
-      "starGrowth7d": 6
+      "starGrowth7d": 7
     },
     {
       "fullName": "Tastelessor/dsh-usage-stats",
@@ -54577,6 +54726,13 @@
       "categories": [
         "data",
         "integrations"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "tblong2105/dsh-sdd-generator",
+      "categories": [
+        "other"
       ],
       "starGrowth7d": 0
     },
@@ -54927,9 +55083,39 @@
       "starGrowth7d": 2
     },
     {
+      "fullName": "thedeveloper256/dsh-model-router",
+      "categories": [
+        "models",
+        "agents",
+        "developer-tools"
+      ],
+      "starGrowth7d": 1
+    },
+    {
       "fullName": "TheGoodMorty/chat-pace",
       "categories": [
         "ui"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "TheHeartFickle/dsh-conversation-folding",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "TheHeartFickle/dsh-one-dark-pro",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "TheHeartFickle/dsh-session-manager",
+      "categories": [
+        "other"
       ],
       "starGrowth7d": 0
     },
@@ -54941,9 +55127,23 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "TheHeartFickle/dsh-solo-agent",
+      "categories": [
+        "agents"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "theinfluencecompany/dsh-realtimeavatar",
       "categories": [
         "integrations"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "TheM14/dsh-session-cleaner",
+      "categories": [
+        "other"
       ],
       "starGrowth7d": 0
     },
@@ -55737,6 +55937,15 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "Tokeii0/dsh-lovelyaudit",
+      "categories": [
+        "security",
+        "ui",
+        "developer-tools"
+      ],
+      "starGrowth7d": 2
+    },
+    {
       "fullName": "tokentopo-ai/dsh-octo",
       "categories": [
         "observability",
@@ -55828,6 +56037,14 @@
         "observability"
       ],
       "starGrowth7d": 6
+    },
+    {
+      "fullName": "Top-Celestial-Company-Ltd/dsh-dros-vajraclaw",
+      "categories": [
+        "security",
+        "agents"
+      ],
+      "starGrowth7d": 0
     },
     {
       "fullName": "Tostoevsky/TsienHsueShen",
@@ -55961,6 +56178,14 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "Traveritas/petween",
+      "categories": [
+        "agents",
+        "media"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "Traveritas/petween-physics",
       "categories": [
         "other"
@@ -55971,6 +56196,14 @@
       "fullName": "TreasureGooldove/dsh-easycode",
       "categories": [
         "developer-tools"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "tree-func/dsh-request-manager",
+      "categories": [
+        "models",
+        "integrations"
       ],
       "starGrowth7d": 0
     },
@@ -56236,6 +56469,13 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "TTsdzb/dsh-global-proxy",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "TTTPOB/dsh-workspace-envrc",
       "categories": [
         "developer-tools"
@@ -56300,6 +56540,15 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "TUcookie/dsh-offpeak-saver",
+      "categories": [
+        "agents",
+        "integrations",
+        "observability"
+      ],
+      "starGrowth7d": 1
+    },
+    {
       "fullName": "tuhuikao/dsh-wlk-video-edit",
       "categories": [
         "media"
@@ -56322,6 +56571,13 @@
     },
     {
       "fullName": "tuogusa/dsh-composer-height",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "tuogusa/dsh-mindmap",
       "categories": [
         "other"
       ],
@@ -56441,7 +56697,7 @@
         "observability",
         "ui"
       ],
-      "starGrowth7d": 1
+      "starGrowth7d": 0
     },
     {
       "fullName": "txlznbzsdj-collab/dsh-deepseek-pet",
@@ -56736,7 +56992,56 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-ab-sample",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-abs",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-ac-save",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-ac-size",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-ac-trouble",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-accounting-cert",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-acne-care",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-acne-mark",
       "categories": [
         "other"
       ],
@@ -56750,7 +57055,49 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-actinium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-active-listening",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-acupoint",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-ad-bid",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-ad-roi",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-adult-vaccine",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-afghanistan",
       "categories": [
         "other"
       ],
@@ -56764,7 +57111,161 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-age-edu",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-aggression",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-agriculture-terms",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-ai-models",
+      "categories": [
+        "models"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-ai-terms",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-ai-use",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-air-fryer",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-air-plant",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-air-purifier",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-airport-time",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-albania",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-aldehyde-control",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-algeria",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-algo-compare",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-altitude",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-altitude-sick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-aluminium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-amb-light",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-americium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-amount-calc",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-anal-gland",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-andorra",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-angola",
       "categories": [
         "other"
       ],
@@ -56778,9 +57279,87 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-ankle-sprain",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-anniversary",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-annual-leave",
       "categories": [
         "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-anti-loss",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-anti-slip",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-anti-theft",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-antibiotic",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-antigua",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-antimony",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-anxiety-check",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-aov-up",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-api-budget",
+      "categories": [
+        "integrations",
+        "observability"
       ],
       "starGrowth7d": 0
     },
@@ -56807,7 +57386,70 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-apology",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-appliance-clean",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-appliance-life",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-appliance-order",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-argentina",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-argon",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-arithmetic-series",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-armenia",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-arsenic",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-art-terms",
       "categories": [
         "other"
       ],
@@ -56821,7 +57463,42 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-ask-leader",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-aspect-ratio",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-asset-alloc",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-asset-split",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-astatine",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-astronomy-terms",
       "categories": [
         "other"
       ],
@@ -56835,7 +57512,49 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-audio-bitrate",
+      "categories": [
+        "media"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-australia",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-austria",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-average",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-azerbaijan",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-baby-clothes",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-baby-fever",
       "categories": [
         "other"
       ],
@@ -56849,7 +57568,105 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-baby-weight",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-back-care",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-backup-plan",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-backup-retention",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bahamas",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-bahrain",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-baijiu-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bait-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bake-fix",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-balcony-care",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-balcony-make",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bandwidth",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bangkok-city",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bangladesh",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-baozi-steam",
       "categories": [
         "other"
       ],
@@ -56863,7 +57680,35 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-barbados",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-barium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-barking-fix",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-base-convert",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-base-makeup",
       "categories": [
         "other"
       ],
@@ -56928,6 +57773,48 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-baseboard",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-basic-training",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bath-reno",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-battery-check",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-battery-health",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-battery-life",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-bbl2l",
       "categories": [
         "other"
@@ -56942,7 +57829,77 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-bean-choice",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bedtime",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-beer-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-beijing-city",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-belarus",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-belgium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-belize",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-benin",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bento",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-berkelium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-berlin-city",
       "categories": [
         "other"
       ],
@@ -56956,7 +57913,217 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-best-time",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bhutan",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-big-clean",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-big-purchase",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bike-care",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bike-fit",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bike-gear",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bike-safe",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bilibili-live",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bin-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-binary",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-binomial-pmf",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-biotech-terms",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bird-cage",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bird-diet",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bird-health",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bird-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bird-tame",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-biscuit-recipe",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bismuth",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bitrate-choice",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blackhead",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blame-avoid",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blanch-skill",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bleach-safety",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blender",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blender-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blood-lipid",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blood-pressure",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blood-sugar",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-blow-dry",
       "categories": [
         "other"
       ],
@@ -56970,7 +58137,126 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-bmi-adjust",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-body-care",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-body-type",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bohrium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bolivia",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bone-aid",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bone-check",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-book-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-book-plan",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bookkeeping",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-boron",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bosnia",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-botswana",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-boundary",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bouquet",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bp-check",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bp-manage",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-brain-computer-terms",
       "categories": [
         "other"
       ],
@@ -56984,6 +58270,132 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-brazil",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bread-recipe",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-breakeven",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-breath-tech",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-breathing",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-brew-method",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bromine",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-brunei",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-brush-pet",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-brush-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-brushing-time",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-btu2kj",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-budget-plan",
+      "categories": [
+        "observability"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-budget-split",
+      "categories": [
+        "observability"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-buenos-aires-city",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bulb-buy",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bulgaria",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-bundle-calc",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-burkina-faso",
       "categories": [
         "other"
@@ -56991,7 +58403,42 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-burn-aid",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-burn-first-aid",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-burundi",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-business-days",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-butter-convert",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-buy-check",
       "categories": [
         "other"
       ],
@@ -57006,6 +58453,34 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-c2f",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-c2k",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cable-power",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cadmium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-caesar",
       "categories": [
         "other"
@@ -57013,7 +58488,133 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-caesium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cafe-order",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cafe-start",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-caffeine",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cairo-city",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cake-pan",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cake-recipe",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cal2j",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-calcium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-californium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cambodia",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-camelcase",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cameroon",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-camp-food",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-camp-gear",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-camp-safety",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-camp-site",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-canada",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-candle-make",
       "categories": [
         "other"
       ],
@@ -57048,7 +58649,28 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-car-seat",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-carbon",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cat-age",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cat-food",
       "categories": [
         "other"
       ],
@@ -57069,6 +58691,13 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-cerium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-cet-pass",
       "categories": [
         "other"
@@ -57076,7 +58705,119 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-cet-score",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-chad",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-charge-time",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-charging-habit",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cheat-meal",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chemistry-terms",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chengdu-city",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chess-basic",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chess-open",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chess-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chess-plan",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chicago-city",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chile",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-china",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chlorine",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-choke-aid",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-chromium",
       "categories": [
         "other"
       ],
@@ -57106,7 +58847,112 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-circuit-plan",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-civil-exam",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-claim",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-clamp",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-class-budget",
+      "categories": [
+        "observability"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-clay-craft",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-clean-freq",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-clean-plan2",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-clean-tools",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cleaner-dilute",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cleaner-use",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cleaning-freq",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-climate-terms",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-closet-zone",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cloth-mold",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cobalt",
       "categories": [
         "other"
       ],
@@ -57143,7 +58989,21 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-cold-drink",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-collatz",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-colombia",
       "categories": [
         "other"
       ],
@@ -57207,7 +59067,21 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-combination",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-comoros",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-compose",
       "categories": [
         "other"
       ],
@@ -57229,7 +59103,28 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-concurrency",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-cone",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-conflict-deal",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-congo-dr",
       "categories": [
         "other"
       ],
@@ -57259,9 +59154,58 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-cook-time",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-cookie",
       "categories": [
         "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-copernicium",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-copper",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-copy-pick",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-correlation",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cosmetics-shelf",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-costa-rica",
+      "categories": [
+        "observability"
       ],
       "starGrowth7d": 0
     },
@@ -57273,7 +59217,49 @@
       "starGrowth7d": 0
     },
     {
+      "fullName": "uckkk/dsh-counter-height",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-couple-talk",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-coupon-opt",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
       "fullName": "uckkk/dsh-coupon-profit",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-covariance",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cover-calc",
+      "categories": [
+        "other"
+      ],
+      "starGrowth7d": 0
+    },
+    {
+      "fullName": "uckkk/dsh-cpr",
       "categories": [
         "other"
       ],
@@ -59546,7 +61532,7 @@
         "ui",
         "developer-tools"
       ],
-      "starGrowth7d": 4
+      "starGrowth7d": 3
     },
     {
       "fullName": "Ultronen/dsh-liquid-glass",
@@ -66463,7 +68449,7 @@
         "agents",
         "developer-tools"
       ],
-      "starGrowth7d": 132
+      "starGrowth7d": 134
     },
     {
       "fullName": "xmanrui/dsh-weixin",
@@ -67671,7 +69657,7 @@
         "observability",
         "models"
       ],
-      "starGrowth7d": 8
+      "starGrowth7d": 9
     },
     {
       "fullName": "ycp424c/dsh-auto-fold-turn",
@@ -68818,7 +70804,7 @@
         "models",
         "agents"
       ],
-      "starGrowth7d": 21
+      "starGrowth7d": 22
     },
     {
       "fullName": "ystyle/dsh-tool-terminal-search",
@@ -69167,7 +71153,7 @@
       "categories": [
         "models"
       ],
-      "starGrowth7d": 480
+      "starGrowth7d": 482
     },
     {
       "fullName": "Yuki-takuya-kun/dsh-claude-code",
