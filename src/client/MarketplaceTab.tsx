@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef, useState, type ComponentProps, type ReactNode } from 'react'
 import {
   Button as PrimitiveButton,
-  IconChevronDownOutline14,
-  IconSearchOutline16,
+  IconChevronDownOutlineRegular,
+  IconSearchOutlineRegular,
   Input,
   Pill as PrimitivePill,
   RiskConfirmation,
@@ -975,7 +975,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
             <div className='mkt-search'>
               <Input
                 type='search'
-                icon={<IconSearchOutline16 aria-hidden='true' />}
+                icon={<IconSearchOutlineRegular aria-hidden='true' />}
                 value={query}
                 placeholder={t('searchPlaceholder')}
                 aria-label={t('searchPlaceholder')}
@@ -1013,14 +1013,14 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
               </span>
             </div>
           ) : null}
-          {view.status === 'loading' ? <div className='mkt-empty' role='status'><IconSearchOutline16 aria-hidden='true' /><p>{t('loading')}</p></div> : null}
+          {view.status === 'loading' ? <div className='mkt-empty' role='status'><IconSearchOutlineRegular aria-hidden='true' /><p>{t('loading')}</p></div> : null}
           {view.status === 'error' ? (
             <div style={s.failure}>
               <p role='alert' style={s.muted}>{t('error')} {view.message}</p>
               <Button variant='outline' size='sm' onClick={retry}>{t('retry')}</Button>
             </div>
           ) : null}
-          {ready !== null && ready.items.length === 0 ? <div className='mkt-empty' role='status'><IconSearchOutline16 aria-hidden='true' /><p>{debouncedQuery === '' && category === 'all' ? t('empty') : t('emptySearch')}</p></div> : null}
+          {ready !== null && ready.items.length === 0 ? <div className='mkt-empty' role='status'><IconSearchOutlineRegular aria-hidden='true' /><p>{debouncedQuery === '' && category === 'all' ? t('empty') : t('emptySearch')}</p></div> : null}
           {ready !== null && ready.items.length > 0 ? (
             <ul className='mkt-cards'>
               {ready.items.map((item) => (
@@ -1063,7 +1063,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
             <div className='mkt-search'>
               <Input
                 type='search'
-                icon={<IconSearchOutline16 aria-hidden='true' />}
+                icon={<IconSearchOutlineRegular aria-hidden='true' />}
                 value={installedQuery}
                 placeholder={t('installedSearchPlaceholder')}
                 aria-label={t('installedSearchPlaceholder')}
@@ -1284,7 +1284,7 @@ function CardRow({ item, t, currentProfile, profileLoading, profileAvailable, is
             <button type='button' className='mkt-detail-toggle' aria-expanded={expanded} onClick={onToggle}>
               {t('details')}
               <span style={{ ...s.chevron, display: 'inline-flex', transform: expanded ? 'rotate(180deg)' : undefined }}>
-                <IconChevronDownOutline14 size={12} aria-hidden='true' />
+                <IconChevronDownOutlineRegular size={12} aria-hidden='true' />
               </span>
             </button>
           </div>
