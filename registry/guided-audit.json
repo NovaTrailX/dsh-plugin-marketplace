@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T16:38:31.282Z",
+  "generatedAt": "2026-09-26T21:26:43.112Z",
   "total": 1274,
   "groups": {
-    "remote-command-found": 437,
-    "local-or-unparsed-command-only": 623,
-    "no-install-command-found": 214
+    "remote-command-found": 435,
+    "local-or-unparsed-command-only": 624,
+    "no-install-command-found": 215
   },
   "rows": [
     {
@@ -499,73 +499,6 @@
         ],
         "runtimeArtifactsCommitted": false,
         "reviewReasons": []
-      }
-    },
-    {
-      "repository": "1475505/miliastra-beyond-simulator",
-      "packageName": "dsh-plugin-beyond-simulator",
-      "version": "2.0.3",
-      "verifiedCommit": "c9b761821c111a7d12f574a747077785a7eb6344",
-      "readmePath": "README.md",
-      "commands": [
-        {
-          "raw": "dsh plugin --profile web add dsh-plugin-beyond-simulator",
-          "profile": "web",
-          "spec": "dsh-plugin-beyond-simulator",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add github:1475505/miliastra-beyond-simulator",
-          "profile": "web",
-          "spec": "github:1475505/miliastra-beyond-simulator",
-          "source": "unknown"
-        },
-        {
-          "raw": "dsh plugin --profile web add ./release/dsh-plugin-beyond-simulator-1.0.10.tgz",
-          "profile": "web",
-          "spec": "./release/dsh-plugin-beyond-simulator-1.0.10.tgz",
-          "source": "local"
-        }
-      ],
-      "targetedCommands": [
-        {
-          "raw": "dsh plugin --profile web add dsh-plugin-beyond-simulator",
-          "profile": "web",
-          "spec": "dsh-plugin-beyond-simulator",
-          "source": "npm"
-        }
-      ],
-      "remoteCommands": [
-        {
-          "raw": "dsh plugin --profile web add dsh-plugin-beyond-simulator",
-          "profile": "web",
-          "spec": "dsh-plugin-beyond-simulator",
-          "source": "npm"
-        }
-      ],
-      "npmVerification": {
-        "verified": false,
-        "spec": "dsh-plugin-beyond-simulator@2.0.3",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-npm-unverified",
-        "reason": "npm-version-not-published"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [
-          "prepare"
-        ],
-        "runtimeArtifactsCommitted": false,
-        "reviewReasons": [
-          "readme-documents-github-install-but-runtime-entry-artifacts-are-missing"
-        ]
       }
     },
     {
@@ -1291,67 +1224,6 @@
         "lifecycleScripts": [],
         "runtimeArtifactsCommitted": false,
         "reviewReasons": []
-      }
-    },
-    {
-      "repository": "5havv/dsh-weixin",
-      "packageName": "@5havv/dsh-weixin",
-      "version": "0.2.0",
-      "verifiedCommit": "f2486b71db318f03d2de366ee8fd21a29adac3d8",
-      "readmePath": "README.md",
-      "commands": [
-        {
-          "raw": "dsh plugin --profile web add @5havv/dsh-weixin",
-          "profile": "web",
-          "spec": "@5havv/dsh-weixin",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add github:5havv/dsh-weixin",
-          "profile": "web",
-          "spec": "github:5havv/dsh-weixin",
-          "source": "unknown"
-        }
-      ],
-      "targetedCommands": [
-        {
-          "raw": "dsh plugin --profile web add @5havv/dsh-weixin",
-          "profile": "web",
-          "spec": "@5havv/dsh-weixin",
-          "source": "npm"
-        }
-      ],
-      "remoteCommands": [
-        {
-          "raw": "dsh plugin --profile web add @5havv/dsh-weixin",
-          "profile": "web",
-          "spec": "@5havv/dsh-weixin",
-          "source": "npm"
-        }
-      ],
-      "npmVerification": {
-        "verified": false,
-        "spec": "@5havv/dsh-weixin@0.2.0",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-npm-unverified",
-        "reason": "npm-version-not-published"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [
-          "prepare"
-        ],
-        "runtimeArtifactsCommitted": false,
-        "reviewReasons": [
-          "readme-documents-github-install-but-runtime-entry-artifacts-are-missing"
-        ]
       }
     },
     {
@@ -3737,6 +3609,38 @@
         "requiresBuildApproval": true,
         "manualSteps": true,
         "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
+      "repository": "Amir83Nasr/dsh-rastin",
+      "packageName": "@amir83nasr/rastin",
+      "version": "0.1.0",
+      "verifiedCommit": "816a9a12bbeb7652b8ed5e97bf5d9de8b348ea1e",
+      "readmePath": "README.md",
+      "commands": [],
+      "targetedCommands": [],
+      "remoteCommands": [],
+      "npmVerification": {
+        "verified": false,
+        "spec": "@amir83nasr/rastin@0.1.0",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-no-matching-remote-command",
+        "reason": "readme-does-not-document-a-remote-install-for-this-package"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [
+          "preinstall"
+        ],
         "runtimeArtifactsCommitted": false,
         "reviewReasons": []
       }
@@ -6371,8 +6275,8 @@
     {
       "repository": "BiBoyang/dsh-eval-harness",
       "packageName": "dsh-eval-harness",
-      "version": "0.5.0",
-      "verifiedCommit": "f6c6e9a3ff071b66d058334f98fc79fff9ca44fe",
+      "version": "0.6.0",
+      "verifiedCommit": "1923ab8bbdcc3ef4ddfb7ab4e3a39f0e74fbc38a",
       "readmePath": "README.md",
       "commands": [
         {
@@ -6398,7 +6302,7 @@
       "remoteCommands": [],
       "npmVerification": {
         "verified": false,
-        "spec": "dsh-eval-harness@0.5.0",
+        "spec": "dsh-eval-harness@0.6.0",
         "reason": "npm-version-not-published"
       },
       "assessment": {
@@ -7296,6 +7200,56 @@
       "assessment": {
         "outcome": "guided-npm-unverified",
         "reason": "npm-version-not-published"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
+      "repository": "borgez/dsh-project-mcp",
+      "packageName": "dsh-project-mcp",
+      "version": "0.2.0",
+      "verifiedCommit": "fe76728d6c7db6714c3ef5f8144993cd19ff9491",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile web add file:$HOME/.dsh/packages/dsh-project-mcp-0.2.0.tgz",
+          "profile": "web",
+          "spec": "file:$HOME/.dsh/packages/dsh-project-mcp-0.2.0.tgz",
+          "source": "local"
+        },
+        {
+          "raw": "dsh plugin add` appends the bundle to `dsh.profile.bundles` and reconciles",
+          "profile": null,
+          "spec": "appends",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile test-web add link:<workspace>`)",
+          "profile": "test-web",
+          "spec": "link:<workspace>",
+          "source": "local"
+        }
+      ],
+      "targetedCommands": [],
+      "remoteCommands": [],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-project-mcp@0.2.0",
+        "reason": "npm-runtime-entry-artifacts-missing",
+        "detail": "[{\"label\":\"host\",\"paths\":[\"lib/index.js\"],\"found\":null},{\"label\":\"client\",\"paths\":[\"lib/client.js\"],\"found\":null}]"
+      },
+      "assessment": {
+        "outcome": "guided-no-matching-remote-command",
+        "reason": "readme-does-not-document-a-remote-install-for-this-package"
       },
       "auditErrors": [],
       "current": {
@@ -10243,7 +10197,7 @@
       "repository": "chnjames/dsh-plugin-market",
       "packageName": "dsh-plugin-market",
       "version": "0.3.0",
-      "verifiedCommit": "c6484f1976a0803dc9132e737b44c81c5229eab4",
+      "verifiedCommit": "c03cf2f86dd440d8c6f00d06f3fb837e48267e7c",
       "readmePath": "README.md",
       "commands": [
         {
@@ -13849,7 +13803,7 @@
       "repository": "dingzhenyao/dsh-plugin-directory",
       "packageName": "dsh-plugin-directory",
       "version": "0.1.0-rc.1",
-      "verifiedCommit": "25e316f3afdd0680f9c669a25243ef61cd5af1a2",
+      "verifiedCommit": "ef9a80b99be66a3bd2c992d67ffaa815b3f20e8a",
       "readmePath": "README.md",
       "commands": [
         {
@@ -27305,7 +27259,7 @@
       "repository": "Len7183/DSH-Think-zh",
       "packageName": "dsh-think-zh",
       "version": "0.2.0",
-      "verifiedCommit": "06a27f64218e7c9367d502fe0f7b90cb8e17ed7a",
+      "verifiedCommit": "a4ba0725ae67de13b4651523bed0394a105978a8",
       "readmePath": "README.md",
       "commands": [
         {
@@ -31419,8 +31373,8 @@
     {
       "repository": "magian1127/deepseek-harness-hashline",
       "packageName": "deepseek-harness-hashline",
-      "version": "0.3.3",
-      "verifiedCommit": "b91e8cc686ddfcefa532882c1927c7e51df99755",
+      "version": "0.3.4",
+      "verifiedCommit": "75b599fabd34c2de7ff60466db5677c8692abdcd",
       "readmePath": "README.md",
       "commands": [
         {
@@ -31440,7 +31394,7 @@
       "remoteCommands": [],
       "npmVerification": {
         "verified": false,
-        "spec": "deepseek-harness-hashline@0.3.3",
+        "spec": "deepseek-harness-hashline@0.3.4",
         "reason": "npm-version-not-published"
       },
       "assessment": {
