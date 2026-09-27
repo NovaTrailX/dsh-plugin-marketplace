@@ -29,6 +29,8 @@ Store/卸载/回滚变更至少运行 `scripts/store-test.ts`、`scripts/store-i
 
 构建与检查读取 `DSH_CHECKOUT`，未设置时脚本仍默认维护者路径 `D:/DSH/deepseek-harness`。在其他安装中显式设置，不把本机路径提交进可移植配置。已有 checkout 可能只有源码和工具而没有 DSH 生成类型；遇到缺失依赖先确认事实，报告受限检查，不默默跳过或自动下载整套环境。
 
+已有 DSH npm 安装时，也可用 `DSH_PACKAGE_ROOT` 指向 `@deepseek-ai/dsh` 包目录，直接验证发布版本的公开类型与加载器。`MARKETPLACE_TOOLS_DIR` 只解析已有独立工具依赖，不自动安装；不要把整个市场 `node_modules` 链接到 DSH 安装。
+
 运行 pnpm 前检查 `node_modules` 的真实路径，不允许整个目录链接到活动 DSH 主程序的依赖目录。上面的环境变量关闭 pnpm 运行脚本前的自动安装；需要安装时在隔离的本仓库依赖目录中明确执行。
 
 ## 行为边界

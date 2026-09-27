@@ -311,6 +311,8 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
   const [installedPackages, setInstalledPackages] = useState<Set<string>>(new Set())
   const [installedProfile, setInstalledProfile] = useState('')
   const [profileLoading, setProfileLoading] = useState(true)
+  const [profileError, setProfileError] = useState<string | null>(null)
+  const [profileSeq, setProfileSeq] = useState(0)
   const [installedLoading, setInstalledLoading] = useState(true)
   const [installedError, setInstalledError] = useState<string | null>(null)
   const [jobs, setJobs] = useState<Map<string, MarketplaceJobStatus>>(new Map())
@@ -340,6 +342,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
   const installedRequest = useRef<Promise<MarketplaceInstalled> | null>(null)
   const installedRefreshQueued = useRef(false)
   const installedRefreshForce = useRef(false)
+  const profileRequestId = useRef(0)
   const updateScrollY = useRef<number | null>(null)
 
   const notify = useCallback((message: string, tone: 'error' | 'info' = 'error') => {
@@ -388,9 +391,13 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
       installedRequest.current = request
       void request.then(
         (result) => {
+          // 完整列表已给出新状态，迟到的安装信息读取不得覆盖它。
+          profileRequestId.current += 1
+          setProfileLoading(false)
           setInstalledMap(new Map(result.entries.map((entry) => [entry.packageName, entry])))
           setInstalledPackages(new Set(result.entries.filter(entry => entry.linked).map(entry => entry.packageName)))
           setInstalledProfile(result.profile)
+          setProfileError(null)
           if (typeof result.installDir === 'string' && result.installDir !== '') {
             setInstallDirState(result.installDir)
             setInstallDirCustom(Boolean(result.installDirCustom))
@@ -428,21 +435,24 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
   // Keep the install directory in sync even before the first installed() call.
   useEffect(() => {
     let current = true
+    const requestId = ++profileRequestId.current
+    setProfileLoading(true)
     void installLocation().then((result) => {
-      if (!current) return
+      if (!current || requestId !== profileRequestId.current) return
       setInstallDirState(result.installDir)
       setInstallDirCustom(Boolean(result.installDirCustom))
       setInstalledProfile(result.profile)
       setInstalledPackages(new Set(result.packageNames))
+      setProfileError(null)
       setProfileLoading(false)
     }, (error: unknown) => {
-      if (current) {
+      if (current && requestId === profileRequestId.current) {
         setProfileLoading(false)
-        notify(error instanceof Error ? error.message : String(error))
+        setProfileError(error instanceof Error ? error.message : String(error))
       }
     })
     return () => { current = false }
-  }, [installLocation, notify])
+  }, [installLocation, profileSeq])
 
   useEffect(() => {
     let current = true
@@ -518,7 +528,12 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
     let current = true
     void loadJobs().then((statuses) => {
       if (!current) return
-      setJobs(new Map(statuses.map(status => [status.jobId, status])))
+      setJobs((currentJobs) => {
+        const merged = new Map(statuses.map(status => [status.jobId, status]))
+        // 初始快照可能迟于本页操作返回，保留已经登记或推进的任务状态。
+        for (const [jobId, status] of currentJobs) merged.set(jobId, status)
+        return boundedJobHistory(merged)
+      })
       if (statuses.some(status => status.kind === 'update' && status.finishedAt === null)) {
         setSubpage('installed')
       }
@@ -730,7 +745,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
   }
 
   const onInstall = (item: MarketplaceRegistryPlugin): void => {
-    if (installedMap.has(item.packageName)) {
+    if (installedPackages.has(item.packageName)) {
       notify(t('alreadyInstalled'), 'info')
       return
     }
@@ -748,6 +763,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
     void guidedAgent(repo, ref, operation).then(() => {
       setBanner(fmt(t, 'agentStarted', { package: packageName }))
     }).catch((error: unknown) => {
+      setBanner((current) => current === t('agentStarting') ? null : current)
       notify(error instanceof Error ? error.message : String(error))
     }).finally(() => { setAgentBusy(null) })
   }
@@ -775,10 +791,13 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
   const applyInstallDir = (value: string, noticeKey: PluginMarketplaceLocaleKey): void => {
     setInstallDirBusy(true)
     setInstallDir(value).then((result) => {
+      profileRequestId.current += 1
+      setProfileLoading(false)
       setInstallDirState(result.installDir)
       setInstallDirCustom(Boolean(result.installDirCustom))
       setInstalledProfile(result.profile)
       setInstalledPackages(new Set(result.packageNames))
+      setProfileError(null)
       notify(t(noticeKey), 'info')
       refreshInstalled()
     }).catch((error: unknown) => {
@@ -971,6 +990,14 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
       ) : null}
       {subpage === 'catalog' ? (
         <>
+          {profileError !== null ? (
+            <div className='mkt-profile-error' style={{ ...s.failure, flexWrap: 'wrap' }}>
+              <p role='alert' style={{ ...s.muted, flex: '1 1 240px', overflowWrap: 'anywhere' }}>{t('installCheckFailed')} {profileError}</p>
+              <Button variant='outline' size='sm' disabled={profileLoading} onClick={() => { setProfileSeq((value) => value + 1) }}>
+                {profileLoading ? t('checkingInstall') : t('retryInstallCheck')}
+              </Button>
+            </div>
+          ) : null}
           <div className='mkt-toolbar'>
             <div className='mkt-search'>
               <Input
@@ -979,7 +1006,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
                 value={query}
                 placeholder={t('searchPlaceholder')}
                 aria-label={t('searchPlaceholder')}
-                onChange={(event) => { setQuery(event.currentTarget.value) }}
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => { setQuery(event.currentTarget.value) }}
               />
             </div>
             <div className='mkt-sort-group'>
@@ -1030,7 +1057,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
                   t={t}
                   currentProfile={installedProfile}
                   profileLoading={profileLoading}
-                  profileAvailable={installedError === null && installedProfile !== ''}
+                  profileAvailable={profileError === null && installedProfile !== ''}
                   isInstalled={installedPackages.has(item.packageName)}
                   job={latestJobForPackage(jobs, item.packageName)}
                   startingKind={startingActions.get(item.packageName) ?? null}
@@ -1067,7 +1094,7 @@ export function MarketplaceTab({ search, details, guidedAgent, install, manualIn
                 value={installedQuery}
                 placeholder={t('installedSearchPlaceholder')}
                 aria-label={t('installedSearchPlaceholder')}
-                onChange={(event) => { setInstalledQuery(event.currentTarget.value) }}
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => { setInstalledQuery(event.currentTarget.value) }}
               />
             </div>
             <Pill active={installedFilter === 'all'} onClick={() => { setInstalledFilter('all') }}>
@@ -1551,7 +1578,7 @@ function ManualInstallPanel({ command, profile, busy, job, onCommandChange, onIn
           placeholder={fmt(t, 'manualInstallPlaceholder', { profile: currentProfile })}
           aria-label={t('manualInstallCommandLabel')}
           disabled={busy}
-          onChange={(event) => { onCommandChange(event.currentTarget.value) }}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) => { onCommandChange(event.currentTarget.value) }}
         />
         <Button variant='primary' size='sm' disabled={busy || profile === '' || command.trim() === ''} onClick={onInstall}>
           {busy ? t('manualInstallStarting') : t('manualInstallAction')}
