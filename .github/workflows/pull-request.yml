@@ -30,17 +30,19 @@ jobs:
         run: |
           echo "MARKETPLACE_TOOLS_DIR=$RUNNER_TEMP/marketplace-tools" >> "$GITHUB_ENV"
           echo "DSH_PACKAGE_ROOT=$RUNNER_TEMP/marketplace-tools/node_modules/@deepseek-ai/dsh" >> "$GITHUB_ENV"
-          echo "TYPERT_LOADER=$RUNNER_TEMP/marketplace-tools/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js" >> "$GITHUB_ENV"
       - name: Install published DSH and isolated build tools
         run: |
           npm install --prefix "$MARKETPLACE_TOOLS_DIR" --save-exact --ignore-scripts @deepseek-ai/dsh@0.1.7-rc.2 esbuild@0.28.2 playwright@1.62.1
           node scripts/ui-tool-dependencies.mjs > "$RUNNER_TEMP/marketplace-ui-tools.txt"
           mapfile -t ui_tools < "$RUNNER_TEMP/marketplace-ui-tools.txt"
           npm install --prefix "$MARKETPLACE_TOOLS_DIR" --save-exact --ignore-scripts "${ui_tools[@]}"
+          node --input-type=module -e 'import { resolveDsh } from "./scripts/dsh-environment.mjs"; console.log("TYPERT_LOADER=" + resolveDsh("@deepseek-ai/dsh-typert-loader"))' >> "$GITHUB_ENV"
           node "$MARKETPLACE_TOOLS_DIR/node_modules/playwright/cli.js" install --with-deps chromium
       - run: pnpm install --frozen-lockfile
       - name: TypeScript
         run: pnpm typecheck
+      - name: Installed DSH dependency layout regressions
+        run: node --test scripts/dsh-environment-test.mjs
       - name: Unit and pnpm integration tests
         run: pnpm test
       - run: pnpm registry:test

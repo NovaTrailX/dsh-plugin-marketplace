@@ -35,6 +35,20 @@ export function resolveDsh(name) {
   return createRequire(path.join(packageRoot, 'package.json')).resolve(name)
 }
 
+/** 普通 npm 安装会提升依赖；全局/独立安装可能嵌套依赖，按 Node 的查找顺序定位清单。 */
+function dshSearchPaths() {
+  if (packageRoot === undefined) throw new Error('DSH_PACKAGE_ROOT is required')
+  return createRequire(path.join(packageRoot, 'package.json')).resolve.paths('@deepseek-ai/dsh') ?? []
+}
+
+export function resolveDshManifest(name) {
+  for (const directory of dshSearchPaths()) {
+    const manifest = path.join(directory, name, 'package.json')
+    if (existsSync(manifest)) return manifest
+  }
+  throw new Error(`Cannot find installed DSH package manifest: ${name}`)
+}
+
 export function typeConfig() {
   const config = JSON.parse(readFileSync(path.join(root, 'tsconfig.json'), 'utf8'))
   if (packageRoot === undefined) {
@@ -54,10 +68,16 @@ export function typeConfig() {
 
   // npm 发布包自带生成类型；使用其公开 exports，避免将旧源码路径当作新版契约。
   const paths = {}
-  const namespace = path.join(packageRoot, 'node_modules', '@deepseek-ai')
-  for (const directory of readdirSync(namespace)) {
-    const manifestPath = path.join(namespace, directory, 'package.json')
-    if (!existsSync(manifestPath)) continue
+  const names = new Set()
+  for (const directory of dshSearchPaths()) {
+    const namespace = path.join(directory, '@deepseek-ai')
+    if (!existsSync(namespace)) continue
+    for (const name of readdirSync(namespace)) {
+      if (existsSync(path.join(namespace, name, 'package.json'))) names.add('@deepseek-ai/' + name)
+    }
+  }
+  for (const name of names) {
+    const manifestPath = resolveDshManifest(name)
     const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'))
     for (const [key, value] of Object.entries(manifest.exports ?? {})) {
       const target = typeof value === 'object' && value !== null ? value.types : undefined
