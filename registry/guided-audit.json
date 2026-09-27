@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T21:26:43.112Z",
-  "total": 1274,
+  "generatedAt": "2026-09-27T01:00:41.780Z",
+  "total": 1276,
   "groups": {
-    "remote-command-found": 435,
-    "local-or-unparsed-command-only": 624,
+    "remote-command-found": 436,
+    "local-or-unparsed-command-only": 625,
     "no-install-command-found": 215
   },
   "rows": [
@@ -2988,13 +2988,15 @@
       "npmVerification": {
         "verified": false,
         "spec": "xiaoxiao-persona-core@0.1.0",
-        "reason": "npm-version-not-published"
+        "reason": "temporary-audit-error"
       },
       "assessment": {
-        "outcome": "guided-no-matching-remote-command",
-        "reason": "readme-does-not-document-a-remote-install-for-this-package"
+        "outcome": "guided-audit-incomplete",
+        "reason": "npm-audit-failed: npm metadata request failed for xiaoxiao-persona-core@0.1.0: The operation was aborted due to timeout"
       },
-      "auditErrors": [],
+      "auditErrors": [
+        "npm-audit-failed: npm metadata request failed for xiaoxiao-persona-core@0.1.0: The operation was aborted due to timeout"
+      ],
       "current": {
         "profiles": [
           "web"
@@ -9051,6 +9053,44 @@
       }
     },
     {
+      "repository": "ChengqianHuang/dsh-personal",
+      "packageName": "dsh-personal",
+      "version": "1.0.0",
+      "verifiedCommit": "bfe6b2220b1cfbb9d18368872015d4aca1fa168e",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile web add /path/to/dsh-personal",
+          "profile": "web",
+          "spec": "/path/to/dsh-personal",
+          "source": "local"
+        }
+      ],
+      "targetedCommands": [],
+      "remoteCommands": [],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-personal@1.0.0",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-no-matching-remote-command",
+        "reason": "readme-does-not-document-a-remote-install-for-this-package"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "headless",
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
       "repository": "chenjie1129/deepseek-harness-reliability-governor",
       "packageName": "@chenjie1129/dsh-reliability-governor-plugin",
       "version": "0.7.0",
@@ -10197,7 +10237,7 @@
       "repository": "chnjames/dsh-plugin-market",
       "packageName": "dsh-plugin-market",
       "version": "0.3.0",
-      "verifiedCommit": "c03cf2f86dd440d8c6f00d06f3fb837e48267e7c",
+      "verifiedCommit": "314bd039e63ad23a015bd3fc4e1c72d7ad918919",
       "readmePath": "README.md",
       "commands": [
         {
@@ -24274,7 +24314,7 @@
       "repository": "jonah791/dsh-temporal-self",
       "packageName": "dsh-temporal-self",
       "version": "0.1.0",
-      "verifiedCommit": "d4489305a161bc3fde58048737c4cf72a120e3bd",
+      "verifiedCommit": "492ed1a363cebc7f0fce7d1463ff1860798d514a",
       "readmePath": "README.md",
       "commands": [],
       "targetedCommands": [],
@@ -25367,8 +25407,8 @@
     {
       "repository": "Kevoyuan/dsh-trading212",
       "packageName": "dsh-trading212",
-      "version": "0.8.8",
-      "verifiedCommit": "8e786c411dd5989ddeac15e4099e497b704e4463",
+      "version": "0.9.0",
+      "verifiedCommit": "1ca87b5ea6cc25eca83187298216f9cf7ba08cb5",
       "readmePath": "README.md",
       "commands": [
         {
@@ -25402,7 +25442,7 @@
       ],
       "npmVerification": {
         "verified": false,
-        "spec": "dsh-trading212@0.8.8",
+        "spec": "dsh-trading212@0.9.0",
         "reason": "npm-version-not-published"
       },
       "assessment": {
@@ -28510,6 +28550,67 @@
         ],
         "runtimeArtifactsCommitted": true,
         "reviewReasons": []
+      }
+    },
+    {
+      "repository": "linkbag/dsh-swarm-orchestrator",
+      "packageName": "dsh-swarm-orchestrator",
+      "version": "0.6.22",
+      "verifiedCommit": "aa7a0d053641789ec6cd98f0a90b07b8c483eec5",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile web add github:linkbag/dsh-swarm-orchestrator",
+          "profile": "web",
+          "spec": "github:linkbag/dsh-swarm-orchestrator",
+          "source": "unknown"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-swarm-orchestrator",
+          "profile": "web",
+          "spec": "dsh-swarm-orchestrator",
+          "source": "npm"
+        }
+      ],
+      "targetedCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-swarm-orchestrator",
+          "profile": "web",
+          "spec": "dsh-swarm-orchestrator",
+          "source": "npm"
+        }
+      ],
+      "remoteCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-swarm-orchestrator",
+          "profile": "web",
+          "spec": "dsh-swarm-orchestrator",
+          "source": "npm"
+        }
+      ],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-swarm-orchestrator@0.6.22",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-npm-unverified",
+        "reason": "npm-version-not-published"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [
+          "prepare"
+        ],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": [
+          "readme-documents-github-install-but-runtime-entry-artifacts-are-missing"
+        ]
       }
     },
     {
@@ -49192,7 +49293,7 @@
       "repository": "TikaFlow/dsh-model-fix",
       "packageName": "dsh-model-fix",
       "version": "0.18.3",
-      "verifiedCommit": "0f74d231b06fe4d08a863713f5adf778ad4d593f",
+      "verifiedCommit": "be448e7a9f781afa768a43c05e262d8e8e2790ec",
       "readmePath": "README.md",
       "commands": [
         {
