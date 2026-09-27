@@ -324,7 +324,7 @@ README 中错误的迁移地址只作为审计信息。如果当前仓库的精�
 
 要求：Node.js、仓库指定版本的 pnpm，以及已构建的 DSH checkout 或已安装的 DSH npm 包。当前兼容基线为 **DSH 0.1.7-rc.2**；源码模式默认读取 `D:/DSH/deepseek-harness`，可通过 `DSH_CHECKOUT` 指定其他位置。
 
-也可设置 `DSH_PACKAGE_ROOT` 指向已安装的 `@deepseek-ai/dsh` 包目录（其中包含 `package.json` 与 `node_modules`）。此模式直接读取该版本的公开类型、Typert 加载器和 UI 组件，不需要重建上游仓库。`MARKETPLACE_TOOLS_DIR` 可指向已有 `esbuild`、`playwright` 的独立工具目录；脚本只解析现有依赖，不自动安装。运行检查前设置 `pnpm_config_verify_deps_before_run=false`，避免 pnpm 自动改写开发依赖。
+也可设置 `DSH_PACKAGE_ROOT` 指向已安装的 `@deepseek-ai/dsh` 包目录（其中包含 `package.json`）。依赖可以嵌套在包内，也可以由 npm 提升到上级目录；脚本按 Node 的查找顺序解析。此模式直接读取该版本的公开类型、Typert 加载器和 UI 组件，不需要重建上游仓库。`MARKETPLACE_TOOLS_DIR` 可指向已有 `esbuild`、`playwright` 的独立工具目录；脚本只解析现有依赖，不自动安装。运行检查前设置 `pnpm_config_verify_deps_before_run=false`，避免 pnpm 自动改写开发依赖。
 
 ```powershell
 pnpm install

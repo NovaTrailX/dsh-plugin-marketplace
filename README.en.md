@@ -330,7 +330,7 @@ The central Registry may also use [`policy/install-overrides.json`](./policy/ins
 
 Requirements: Node.js, the repository's pinned pnpm, and either a built DSH checkout or an installed DSH npm package. The compatibility baseline is **DSH 0.1.7-rc.2**. Source mode defaults to `D:/DSH/deepseek-harness`; set `DSH_CHECKOUT` to override it.
 
-Alternatively, set `DSH_PACKAGE_ROOT` to the installed `@deepseek-ai/dsh` package directory containing `package.json` and `node_modules`. This uses that release's public types, Typert loader and UI components without rebuilding upstream. `MARKETPLACE_TOOLS_DIR` may point to an existing standalone tool directory providing `esbuild` and `playwright`; scripts never install them automatically. Set `pnpm_config_verify_deps_before_run=false` before checks to prevent implicit dependency changes.
+Alternatively, set `DSH_PACKAGE_ROOT` to the installed `@deepseek-ai/dsh` package directory containing `package.json`. Dependencies may be nested or hoisted by npm; scripts follow Node's search order. This uses that release's public types, Typert loader and UI components without rebuilding upstream. `MARKETPLACE_TOOLS_DIR` may point to an existing standalone tool directory providing `esbuild` and `playwright`; scripts never install them automatically. Set `pnpm_config_verify_deps_before_run=false` before checks to prevent implicit dependency changes.
 
 ```powershell
 pnpm install
