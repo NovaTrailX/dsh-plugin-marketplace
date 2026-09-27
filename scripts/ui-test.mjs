@@ -170,9 +170,10 @@ try {
       const { x, y, bottom, height } = element.getBoundingClientRect()
       return { x, y, bottom, height }
     }))
+    await page.screenshot({ path: join(screenshots, 'marketplace-refresh-density.png'), animations: 'disabled' })
     assert.equal(cards[0].y, cards[1].y, width + 'px 应显示两列')
     assert.ok(cards[1].x > cards[0].x)
-    assert.ok(cards.every(card => card.height <= 220), '默认卡片无需大块留白')
+    assert.ok(cards.every(card => card.height <= 220), '默认卡片无需大块留白：' + JSON.stringify(cards))
     const visibleCount = cards.filter(card => card.y >= 0 && card.bottom <= 794).length
     assert.ok(visibleCount >= 4, width + 'px 首屏应至少完整显示四个插件')
     console.log(`内容区 ${width}px：双列，卡片 ${cards[0].height}px，首屏完整显示 ${visibleCount} 个插件`)

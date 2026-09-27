@@ -57,6 +57,13 @@ jobs:
       - run: pnpm guided-agent:test
       - name: Browser regressions with published DSH components
         run: pnpm ui:test
+      - name: Preserve browser evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: marketplace-browser-screenshots
+          path: docs/screenshots/marketplace-*.png
+          retention-days: 7
       - name: Build plugin
         run: pnpm build
       - name: Verify plugin and generated artifacts
