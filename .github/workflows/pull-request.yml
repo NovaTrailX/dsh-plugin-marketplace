@@ -16,9 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      DSH_PACKAGE_ROOT: ${{ runner.temp }}/marketplace-tools/node_modules/@deepseek-ai/dsh
-      MARKETPLACE_TOOLS_DIR: ${{ runner.temp }}/marketplace-tools
-      TYPERT_LOADER: ${{ runner.temp }}/marketplace-tools/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js
       pnpm_config_verify_deps_before_run: 'false'
     steps:
       - uses: actions/checkout@v7
@@ -29,6 +26,11 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
+      - name: Configure isolated tool paths
+        run: |
+          echo "MARKETPLACE_TOOLS_DIR=$RUNNER_TEMP/marketplace-tools" >> "$GITHUB_ENV"
+          echo "DSH_PACKAGE_ROOT=$RUNNER_TEMP/marketplace-tools/node_modules/@deepseek-ai/dsh" >> "$GITHUB_ENV"
+          echo "TYPERT_LOADER=$RUNNER_TEMP/marketplace-tools/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js" >> "$GITHUB_ENV"
       - name: Install published DSH and isolated build tools
         run: |
           npm install --prefix "$MARKETPLACE_TOOLS_DIR" --save-exact --ignore-scripts @deepseek-ai/dsh@0.1.7-rc.2 esbuild@0.28.2 playwright@1.62.1
