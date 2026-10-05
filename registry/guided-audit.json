@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T23:25:38.032Z",
-  "total": 1325,
+  "generatedAt": "2026-10-05T05:57:45.859Z",
+  "total": 1324,
   "groups": {
-    "remote-command-found": 452,
+    "remote-command-found": 451,
     "local-or-unparsed-command-only": 644,
     "no-install-command-found": 229
   },
@@ -4181,7 +4181,7 @@
       "repository": "AliceSaikawa/dsh-webui-m3e",
       "packageName": "dsh-webui-m3e",
       "version": "0.0.7",
-      "verifiedCommit": "95ea9a0da6e16e6cda34b7214424d75850462f29",
+      "verifiedCommit": "b895500a88e2db7a23f1dbfc0569a3cdfe89156d",
       "readmePath": "README.md",
       "commands": [
         {
@@ -11455,7 +11455,7 @@
       "repository": "chnjames/dsh-plugin-market",
       "packageName": "dsh-plugin-market",
       "version": "0.3.0",
-      "verifiedCommit": "b2e51023b813b530465bb8b2a6f04d61e396097a",
+      "verifiedCommit": "bbb37c285156c51db7a41d4e4566d787f3306d43",
       "readmePath": "README.md",
       "commands": [
         {
@@ -13489,6 +13489,36 @@
       }
     },
     {
+      "repository": "CYEzero/dsh-style-setting",
+      "packageName": "@local/dsh-style-setting",
+      "version": "0.7.0",
+      "verifiedCommit": "233c9c2d8ffb28bb8bae33288c60621aeb3ed4f3",
+      "readmePath": "README.md",
+      "commands": [],
+      "targetedCommands": [],
+      "remoteCommands": [],
+      "npmVerification": {
+        "verified": false,
+        "spec": "@local/dsh-style-setting@0.7.0",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-no-matching-remote-command",
+        "reason": "readme-does-not-document-a-remote-install-for-this-package"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
       "repository": "cyijun/dsh-surfing-plugin",
       "packageName": "dsh-surfing-plugin",
       "version": "0.1.0",
@@ -15341,7 +15371,7 @@
       "repository": "dingzhenyao/dsh-plugin-directory",
       "packageName": "dsh-plugin-directory",
       "version": "0.1.0-rc.1",
-      "verifiedCommit": "5de30aeb5d943ed91469f01cb200774c902c3de7",
+      "verifiedCommit": "a46d8777e715153ad80558f1009acec05aadc67e",
       "readmePath": "README.md",
       "commands": [
         {
@@ -19056,77 +19086,6 @@
       }
     },
     {
-      "repository": "godv61/dsh-task-engine",
-      "packageName": "@godv61/dsh-task-engine",
-      "version": "0.30.0",
-      "verifiedCommit": "9c64b0a0e742b3e205712a3b598f12e5b8b823c4",
-      "readmePath": "README.md",
-      "commands": [
-        {
-          "raw": "dsh plugin --profile web add @godv61/dsh-task-engine",
-          "profile": "web",
-          "spec": "@godv61/dsh-task-engine",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add @godv61/dsh-task-engine`，再运行 `pnpm dsh web --no-open`。重启后，侧边栏应出现“工程任务”，新会话应能选择“工程化开发引擎”。普通会话不会因为某个项目配置了流程而自动进入该流程。",
-          "profile": "web",
-          "spec": "@godv61/dsh-task-engine",
-          "source": "npm"
-        }
-      ],
-      "targetedCommands": [
-        {
-          "raw": "dsh plugin --profile web add @godv61/dsh-task-engine",
-          "profile": "web",
-          "spec": "@godv61/dsh-task-engine",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add @godv61/dsh-task-engine`，再运行 `pnpm dsh web --no-open`。重启后，侧边栏应出现“工程任务”，新会话应能选择“工程化开发引擎”。普通会话不会因为某个项目配置了流程而自动进入该流程。",
-          "profile": "web",
-          "spec": "@godv61/dsh-task-engine",
-          "source": "npm"
-        }
-      ],
-      "remoteCommands": [
-        {
-          "raw": "dsh plugin --profile web add @godv61/dsh-task-engine",
-          "profile": "web",
-          "spec": "@godv61/dsh-task-engine",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add @godv61/dsh-task-engine`，再运行 `pnpm dsh web --no-open`。重启后，侧边栏应出现“工程任务”，新会话应能选择“工程化开发引擎”。普通会话不会因为某个项目配置了流程而自动进入该流程。",
-          "profile": "web",
-          "spec": "@godv61/dsh-task-engine",
-          "source": "npm"
-        }
-      ],
-      "npmVerification": {
-        "verified": false,
-        "spec": "@godv61/dsh-task-engine@0.30.0",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-npm-unverified",
-        "reason": "npm-version-not-published"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [
-          "prepare"
-        ],
-        "runtimeArtifactsCommitted": false,
-        "reviewReasons": []
-      }
-    },
-    {
       "repository": "GongYuanCaiJi/dsh-baoyu-skills",
       "packageName": "dsh-baoyu-skills",
       "version": "0.1.0",
@@ -22355,7 +22314,7 @@
       "repository": "HOPE-LGNF/dsh-state-notifier",
       "packageName": "dsh-state-notifier",
       "version": "0.3.1",
-      "verifiedCommit": "dfecf7030fea8427527d9537238f8696a3d48110",
+      "verifiedCommit": "b1cb185f923744bf63698e411b39c00728155f47",
       "readmePath": "README.md",
       "commands": [],
       "targetedCommands": [],
@@ -22376,7 +22335,9 @@
         ],
         "requiresBuildApproval": true,
         "manualSteps": true,
-        "lifecycleScripts": [],
+        "lifecycleScripts": [
+          "prepare"
+        ],
         "runtimeArtifactsCommitted": false,
         "reviewReasons": []
       }
@@ -29378,36 +29339,6 @@
       }
     },
     {
-      "repository": "lemonxiny55/dsh-composition-doctor",
-      "packageName": "dsh-composition-doctor",
-      "version": "0.4.0",
-      "verifiedCommit": "8cd296eb018e1e3b0c03a570bf9fb37239c80163",
-      "readmePath": "README.md",
-      "commands": [],
-      "targetedCommands": [],
-      "remoteCommands": [],
-      "npmVerification": {
-        "verified": false,
-        "spec": "dsh-composition-doctor@0.4.0",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-no-matching-remote-command",
-        "reason": "readme-does-not-document-a-remote-install-for-this-package"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [],
-        "runtimeArtifactsCommitted": false,
-        "reviewReasons": []
-      }
-    },
-    {
       "repository": "Len7183/DSH-Think-zh",
       "packageName": "dsh-think-zh",
       "version": "1.0.0",
@@ -30369,6 +30300,71 @@
         "requiresBuildApproval": true,
         "manualSteps": true,
         "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
+      "repository": "Likenttt/garmin-connect-plugin-for-dsh",
+      "packageName": "dsh-plugin-garmin-connect",
+      "version": "0.1.13",
+      "verifiedCommit": "a36af2aaf9065493892fd82065308dd3a15d07a4",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-plugin-garmin-connect",
+          "profile": "web",
+          "spec": "dsh-plugin-garmin-connect",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add github:<owner>/<repo>",
+          "profile": "web",
+          "spec": "github:<owner>/<repo>",
+          "source": "unknown"
+        },
+        {
+          "raw": "dsh plugin --profile web add github:<owner>/<repo>` fetches sources and runs the package's `prepare` script with the locally installed TypeScript compiler; pnpm ≥ 10 refuses to run the script until you allow it — `dsh` prints the exact `allowBuilds` key for the profile's `pnpm-workspace.yaml`.",
+          "profile": "web",
+          "spec": "github:<owner>/<repo>",
+          "source": "unknown"
+        }
+      ],
+      "targetedCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-plugin-garmin-connect",
+          "profile": "web",
+          "spec": "dsh-plugin-garmin-connect",
+          "source": "npm"
+        }
+      ],
+      "remoteCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-plugin-garmin-connect",
+          "profile": "web",
+          "spec": "dsh-plugin-garmin-connect",
+          "source": "npm"
+        }
+      ],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-plugin-garmin-connect@0.1.13",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-npm-unverified",
+        "reason": "npm-version-not-published"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [
+          "prepare"
+        ],
         "runtimeArtifactsCommitted": false,
         "reviewReasons": []
       }
@@ -32351,7 +32347,7 @@
       "repository": "lsmax-72/dsh-rsi",
       "packageName": "dsh-rsi",
       "version": "0.0.1",
-      "verifiedCommit": "059994398be8be6a30ecad0a11d6dffd5af48c96",
+      "verifiedCommit": "b1405d20423a4c83f7968e9305af944330f0156f",
       "readmePath": "README.md",
       "commands": [
         {
@@ -36852,8 +36848,8 @@
     {
       "repository": "Mortal520/dsh-provider-pro",
       "packageName": "dsh-provider-pro",
-      "version": "0.6.0",
-      "verifiedCommit": "f6ae4e58395d23f90b7d91f75d7ed3d52fc58f68",
+      "version": "0.6.1",
+      "verifiedCommit": "b773ea490c6b232952dbd6c4d82ff5696576afff",
       "readmePath": "README.md",
       "commands": [
         {
@@ -36885,7 +36881,7 @@
       "remoteCommands": [],
       "npmVerification": {
         "verified": false,
-        "spec": "dsh-provider-pro@0.6.0",
+        "spec": "dsh-provider-pro@0.6.1",
         "reason": "npm-version-not-published"
       },
       "assessment": {
@@ -41262,8 +41258,8 @@
     {
       "repository": "P02-1010751281/dsh-project-context",
       "packageName": "dsh-project-context",
-      "version": "0.2.1",
-      "verifiedCommit": "da5da928afeb80ead148a9a22270519115be6337",
+      "version": "0.3.0",
+      "verifiedCommit": "3ce795c048e843fe95fbd6dc329b106c93b796a9",
       "readmePath": "README.md",
       "commands": [
         {
@@ -41277,7 +41273,7 @@
       "remoteCommands": [],
       "npmVerification": {
         "verified": false,
-        "spec": "dsh-project-context@0.2.1",
+        "spec": "dsh-project-context@0.3.0",
         "reason": "npm-version-not-published"
       },
       "assessment": {
@@ -48492,7 +48488,7 @@
       "repository": "snylonue/dsh-spawn",
       "packageName": "dsh-spawn",
       "version": "1.0.0",
-      "verifiedCommit": "833e48481f7065be1a47169238a088b5a43f81b0",
+      "verifiedCommit": "15a9e980078aff8a3950382762496cdec7263545",
       "readmePath": "README.md",
       "commands": [],
       "targetedCommands": [],
@@ -49096,8 +49092,8 @@
       "repository": "sskkde/dsh-oh-my-agent",
       "packageName": "@dsh-external/dsh-oh-my-agent",
       "version": "0.1.0",
-      "verifiedCommit": "3697b0fc4021421cd43251bf882153c0892ae1ef",
-      "readmePath": "README.md",
+      "verifiedCommit": "0ddc4b01269dadc9c1b4a9b39a6513c20ea4743b",
+      "readmePath": null,
       "commands": [],
       "targetedCommands": [],
       "remoteCommands": [],
@@ -52795,100 +52791,6 @@
         "reviewReasons": [
           "readme-documents-github-install-but-runtime-entry-artifacts-are-missing"
         ]
-      }
-    },
-    {
-      "repository": "Totoro-qaq/dsh-jot",
-      "packageName": "dsh-jot",
-      "version": "0.2.5",
-      "verifiedCommit": "a65d00e5fc3c4ecca59dda34df05fff2ea774c3d",
-      "readmePath": "README.md",
-      "commands": [
-        {
-          "raw": "dsh plugin --profile desktop add dsh-jot",
-          "profile": "desktop",
-          "spec": "dsh-jot",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add dsh-jot",
-          "profile": "web",
-          "spec": "dsh-jot",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile desktop add dsh-jot@latest`，然后重启 Host。**卸载：** `dsh plugin --profile desktop remove dsh-jot`；笔记数据不会随插件删除。Web 把 `desktop` 换成 `web`。",
-          "profile": "desktop",
-          "spec": "dsh-jot@latest",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile desktop add \"$PWD/artifacts/dsh-jot-<版本>.tgz\"",
-          "profile": "desktop",
-          "spec": "$PWD/artifacts/dsh-jot-<版本>.tgz",
-          "source": "unknown"
-        }
-      ],
-      "targetedCommands": [
-        {
-          "raw": "dsh plugin --profile desktop add dsh-jot",
-          "profile": "desktop",
-          "spec": "dsh-jot",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add dsh-jot",
-          "profile": "web",
-          "spec": "dsh-jot",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile desktop add dsh-jot@latest`，然后重启 Host。**卸载：** `dsh plugin --profile desktop remove dsh-jot`；笔记数据不会随插件删除。Web 把 `desktop` 换成 `web`。",
-          "profile": "desktop",
-          "spec": "dsh-jot@latest",
-          "source": "npm"
-        }
-      ],
-      "remoteCommands": [
-        {
-          "raw": "dsh plugin --profile desktop add dsh-jot",
-          "profile": "desktop",
-          "spec": "dsh-jot",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add dsh-jot",
-          "profile": "web",
-          "spec": "dsh-jot",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile desktop add dsh-jot@latest`，然后重启 Host。**卸载：** `dsh plugin --profile desktop remove dsh-jot`；笔记数据不会随插件删除。Web 把 `desktop` 换成 `web`。",
-          "profile": "desktop",
-          "spec": "dsh-jot@latest",
-          "source": "npm"
-        }
-      ],
-      "npmVerification": {
-        "verified": false,
-        "spec": "dsh-jot@0.2.5",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-npm-unverified",
-        "reason": "npm-version-not-published"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "desktop",
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [],
-        "runtimeArtifactsCommitted": false,
-        "reviewReasons": []
       }
     },
     {
