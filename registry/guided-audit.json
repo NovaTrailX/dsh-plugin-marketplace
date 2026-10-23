@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T21:56:11.399Z",
+  "generatedAt": "2026-10-23T00:59:41.489Z",
   "total": 1397,
   "groups": {
-    "remote-command-found": 467,
+    "remote-command-found": 468,
     "local-or-unparsed-command-only": 666,
-    "no-install-command-found": 264
+    "no-install-command-found": 263
   },
   "rows": [
     {
@@ -12489,7 +12489,7 @@
       "repository": "chnjames/dsh-plugin-market",
       "packageName": "dsh-plugin-market",
       "version": "0.3.0",
-      "verifiedCommit": "2e7605cc33ab71cd97fba38499c27907a68c7204",
+      "verifiedCommit": "466f58d6098dfc8c3ff77145cc118f966af78f5f",
       "readmePath": "README.md",
       "commands": [
         {
@@ -19879,39 +19879,6 @@
         "requiresBuildApproval": true,
         "manualSteps": true,
         "lifecycleScripts": [],
-        "runtimeArtifactsCommitted": false,
-        "reviewReasons": []
-      }
-    },
-    {
-      "repository": "FuRongJun-1999/dsh-memory",
-      "packageName": "@furongjun1999/dsh-memory",
-      "version": "0.9.11",
-      "verifiedCommit": "b278362da570b0cc646a1468f6f628334cb67580",
-      "readmePath": "README.md",
-      "commands": [],
-      "targetedCommands": [],
-      "remoteCommands": [],
-      "npmVerification": {
-        "verified": false,
-        "spec": "@furongjun1999/dsh-memory@0.9.11",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-no-matching-remote-command",
-        "reason": "readme-does-not-document-a-remote-install-for-this-package"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "headless",
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [
-          "prepare"
-        ],
         "runtimeArtifactsCommitted": false,
         "reviewReasons": []
       }
@@ -33018,7 +32985,7 @@
       "repository": "LilycleHeart/dsh-liuli-ui-enhance",
       "packageName": "dsh-liuli-ui-enhance",
       "version": "0.1.2-rc.37",
-      "verifiedCommit": "dc2f1c697e2ca57678b5972f6f52b5d38281628c",
+      "verifiedCommit": "dfb90448c5fe9bb82d567871538560e57669afd0",
       "readmePath": "README.md",
       "commands": [
         {
@@ -40936,7 +40903,7 @@
       "repository": "NelsonLongxiang/dsh-open-a2a-net",
       "packageName": "@nelsonlongxiang/dsh-open-a2a-net",
       "version": "0.6.25",
-      "verifiedCommit": "74d6a50793b19419afc7e50ff63e3deeb5e3b47f",
+      "verifiedCommit": "09e18fbbadebbb25a8552d0c10ffeaf0630eddf1",
       "readmePath": "README.md",
       "commands": [
         {
@@ -45677,7 +45644,7 @@
       "repository": "po-et/dsh-http-probe",
       "packageName": "dsh-http-probe",
       "version": "0.1.0",
-      "verifiedCommit": "0e4a961f89f9e07b1f250811c4d932d2dfe244d7",
+      "verifiedCommit": "97605df3c70b9bd117687501bf8fb069d11f706f",
       "readmePath": "README.md",
       "commands": [
         {
@@ -46651,9 +46618,27 @@
       "repository": "qiyuexue-xiyu/dsh-tool-cost-hint",
       "packageName": "dsh-tool-cost-hint",
       "version": "0.2.0",
-      "verifiedCommit": "3fc67cbc66260801136ea38bc10be36072dc1c6e",
+      "verifiedCommit": "a15004e1a9ff70b86d2640472142d5fba4002ce8",
       "readmePath": "README.md",
       "commands": [
+        {
+          "raw": "dsh plugin add <你的 profile 名> dsh-tool-cost-hint` |",
+          "profile": null,
+          "spec": "<你的",
+          "source": "unknown"
+        },
+        {
+          "raw": "dsh plugin add <你的 profile 名> https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/download/v0.2.0/dsh-tool-cost-hint-0.2.0.tgz` |",
+          "profile": null,
+          "spec": "<你的",
+          "source": "unknown"
+        },
+        {
+          "raw": "dsh plugin add` 一定会失败**",
+          "profile": null,
+          "spec": "一定会失败**",
+          "source": "unknown"
+        },
         {
           "raw": "dsh plugin --profile desktop add file:.../dsh-tool-cost-hint-0.2.0.tgz",
           "profile": "desktop",
@@ -46673,10 +46658,10 @@
           "source": "local"
         },
         {
-          "raw": "dsh plugin --profile web add ./dsh-tool-cost-hint-0.2.0.tgz",
+          "raw": "dsh plugin --profile web add https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/latest/download/dsh-tool-cost-hint-0.2.0.tgz",
           "profile": "web",
-          "spec": "./dsh-tool-cost-hint-0.2.0.tgz",
-          "source": "local"
+          "spec": "https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/latest/download/dsh-tool-cost-hint-0.2.0.tgz",
+          "source": "tarball"
         },
         {
           "raw": "dsh plugin add https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint",
@@ -46685,21 +46670,33 @@
           "source": "unknown"
         },
         {
-          "raw": "dsh plugin --profile web add <包名>` | **暂不可用**——还没发布到 npm registry |",
+          "raw": "dsh plugin --profile web add dsh-tool-cost-hint` | `registry` | **暂不可用**——还没发布到 npm registry（包名未被占用） |",
           "profile": "web",
-          "spec": "<包名>",
-          "source": "unknown"
+          "spec": "dsh-tool-cost-hint",
+          "source": "npm"
         },
         {
-          "raw": "dsh plugin --profile web add github:qiyuexue-xiyu/dsh-tool-cost-hint` | **可用**，但拉的是源码，对方要能连 GitHub 且本机得有构建工具链 |",
+          "raw": "dsh plugin --profile web add github:qiyuexue-xiyu/dsh-tool-cost-hint` | `git` | 可用，但拉**源码**（`dist/` 不在 git 里），对方要有 Node 构建链 |",
           "profile": "web",
           "spec": "github:qiyuexue-xiyu/dsh-tool-cost-hint",
           "source": "unknown"
         },
         {
-          "raw": "dsh plugin --profile web add ./x.tgz` | **可用且最省事**，`dist/` 已经打包在里面 |",
+          "raw": "dsh plugin --profile web add <https://…​.tgz>` | `tarball`，`host` = `github.com` | **✅ 可用，一条命令直接装，无需下载、无需构建** |",
           "profile": "web",
-          "spec": "./x.tgz",
+          "spec": "<https://…​.tgz>",
+          "source": "unknown"
+        },
+        {
+          "raw": "dsh plugin --profile web add <绝对路径>.tgz` | `tarball`，带 `path` | ✅ 可用，但对方得先有文件 |",
+          "profile": "web",
+          "spec": "<绝对路径>.tgz",
+          "source": "unknown"
+        },
+        {
+          "raw": "dsh plugin --profile web add \"D:\\Downloads\\dsh-tool-cost-hint-0.2.0.tgz\"",
+          "profile": "web",
+          "spec": "D:\\Downloads\\dsh-tool-cost-hint-0.2.0.tgz",
           "source": "local"
         },
         {
@@ -46707,6 +46704,12 @@
           "profile": "web",
           "spec": "dsh-tool-cost-hint",
           "source": "npm"
+        },
+        {
+          "raw": "dsh plugin add` 会报",
+          "profile": null,
+          "spec": "会报",
+          "source": "unknown"
         },
         {
           "raw": "dsh plugin --profile <你的 profile 名> add file:<本插件目录的绝对路径>",
@@ -46735,6 +46738,18 @@
       ],
       "targetedCommands": [
         {
+          "raw": "dsh plugin --profile web add https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/latest/download/dsh-tool-cost-hint-0.2.0.tgz",
+          "profile": "web",
+          "spec": "https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/latest/download/dsh-tool-cost-hint-0.2.0.tgz",
+          "source": "tarball"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-cost-hint` | `registry` | **暂不可用**——还没发布到 npm registry（包名未被占用） |",
+          "profile": "web",
+          "spec": "dsh-tool-cost-hint",
+          "source": "npm"
+        },
+        {
           "raw": "dsh plugin --profile web add dsh-tool-cost-hint",
           "profile": "web",
           "spec": "dsh-tool-cost-hint",
@@ -46742,6 +46757,18 @@
         }
       ],
       "remoteCommands": [
+        {
+          "raw": "dsh plugin --profile web add https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/latest/download/dsh-tool-cost-hint-0.2.0.tgz",
+          "profile": "web",
+          "spec": "https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/latest/download/dsh-tool-cost-hint-0.2.0.tgz",
+          "source": "tarball"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-cost-hint` | `registry` | **暂不可用**——还没发布到 npm registry（包名未被占用） |",
+          "profile": "web",
+          "spec": "dsh-tool-cost-hint",
+          "source": "npm"
+        },
         {
           "raw": "dsh plugin --profile web add dsh-tool-cost-hint",
           "profile": "web",
@@ -47873,63 +47900,6 @@
       }
     },
     {
-      "repository": "raven3005672/dsh-plugin-shell-skin",
-      "packageName": "dsh-plugin-shell-skin",
-      "version": "0.1.9",
-      "verifiedCommit": "6c500cf2c5361664b56a87977bf8226b8d2ecc7a",
-      "readmePath": "README.md",
-      "commands": [
-        {
-          "raw": "dsh plugin --profile web add dsh-plugin-shell-skin",
-          "profile": "web",
-          "spec": "dsh-plugin-shell-skin",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add \"file:$PWD\"",
-          "profile": "web",
-          "spec": "file:$PWD",
-          "source": "local"
-        }
-      ],
-      "targetedCommands": [
-        {
-          "raw": "dsh plugin --profile web add dsh-plugin-shell-skin",
-          "profile": "web",
-          "spec": "dsh-plugin-shell-skin",
-          "source": "npm"
-        }
-      ],
-      "remoteCommands": [
-        {
-          "raw": "dsh plugin --profile web add dsh-plugin-shell-skin",
-          "profile": "web",
-          "spec": "dsh-plugin-shell-skin",
-          "source": "npm"
-        }
-      ],
-      "npmVerification": {
-        "verified": false,
-        "spec": "dsh-plugin-shell-skin@0.1.9",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-npm-unverified",
-        "reason": "npm-version-not-published"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [],
-        "runtimeArtifactsCommitted": false,
-        "reviewReasons": []
-      }
-    },
-    {
       "repository": "rayhanlu0519-a11y/dsh-prompt-optimizer",
       "packageName": "dsh-prompt-optimizer",
       "version": "0.1.0",
@@ -48270,7 +48240,7 @@
       "repository": "redfox-data/redfox-community-dsh",
       "packageName": "redfox-community-dsh",
       "version": "0.1.0",
-      "verifiedCommit": "e2484d1a0492dce13b3d44877bc636af8f3e1975",
+      "verifiedCommit": "8d47c77cae671e5f1ac3498c83f5130982bdbd4b",
       "readmePath": "README.md",
       "commands": [
         {
@@ -48362,7 +48332,7 @@
       "repository": "reviso-si/reviso-dsh",
       "packageName": "dsh-reviso",
       "version": "0.1.0",
-      "verifiedCommit": "7c75ec91d6e21ccc58606ce9e14572f27655c1b6",
+      "verifiedCommit": "23cc7d27155f5954acd4fd84faf26e4412f33543",
       "readmePath": "README.md",
       "commands": [
         {
@@ -48388,6 +48358,93 @@
       "assessment": {
         "outcome": "guided-no-matching-remote-command",
         "reason": "readme-does-not-document-a-remote-install-for-this-package"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
+      "repository": "revive/dsh-git-credentials",
+      "packageName": "dsh-git-credentials",
+      "version": "0.6.1",
+      "verifiedCommit": "454adab035e42ea9a62faa41d590dd7bee5a6c66",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile <name> add ./dsh-git-credentials-0.4.0.tgz",
+          "profile": "<name>",
+          "spec": "./dsh-git-credentials-0.4.0.tgz",
+          "source": "local"
+        },
+        {
+          "raw": "dsh plugin --profile <name> add dsh-git-credentials` and it joins the profile's bundle layers. The runtime resolves the plugin's `@deepseek-ai/*` imports from the installation's flat fallback (`$DSH_HOME/profiles/node_modules`), so the peerDependencies declare the **published** version line (`@deepseek-ai/cordis ^4.0.1-rc.1`, `@deepseek-ai/dsh-tools >=0.1.7-rc.1 <1.0.0`, `@deepseek-ai/schemastery ^3.18.1-rc.1`) — never the dev-workspace `0.1.0-rc.5` versions. Harness packages version in lockstep",
+          "profile": "<name>",
+          "spec": "dsh-git-credentials",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile <name> add dsh-git-credentials`.",
+          "profile": "<name>",
+          "spec": "dsh-git-credentials",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile <name> add ./dsh-git-credentials-<version>.tgz",
+          "profile": "<name>",
+          "spec": "./dsh-git-credentials-<version>.tgz",
+          "source": "local"
+        },
+        {
+          "raw": "dsh plugin --profile <name> add <tarball|package>`, confirm `dsh --profile <name> --dump-config` shows the `# == dsh-git-credentials` layer, then boot the profile and check the 24 tools register.",
+          "profile": "<name>",
+          "spec": "<tarball|package>",
+          "source": "unknown"
+        }
+      ],
+      "targetedCommands": [
+        {
+          "raw": "dsh plugin --profile <name> add dsh-git-credentials` and it joins the profile's bundle layers. The runtime resolves the plugin's `@deepseek-ai/*` imports from the installation's flat fallback (`$DSH_HOME/profiles/node_modules`), so the peerDependencies declare the **published** version line (`@deepseek-ai/cordis ^4.0.1-rc.1`, `@deepseek-ai/dsh-tools >=0.1.7-rc.1 <1.0.0`, `@deepseek-ai/schemastery ^3.18.1-rc.1`) — never the dev-workspace `0.1.0-rc.5` versions. Harness packages version in lockstep",
+          "profile": "<name>",
+          "spec": "dsh-git-credentials",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile <name> add dsh-git-credentials`.",
+          "profile": "<name>",
+          "spec": "dsh-git-credentials",
+          "source": "npm"
+        }
+      ],
+      "remoteCommands": [
+        {
+          "raw": "dsh plugin --profile <name> add dsh-git-credentials` and it joins the profile's bundle layers. The runtime resolves the plugin's `@deepseek-ai/*` imports from the installation's flat fallback (`$DSH_HOME/profiles/node_modules`), so the peerDependencies declare the **published** version line (`@deepseek-ai/cordis ^4.0.1-rc.1`, `@deepseek-ai/dsh-tools >=0.1.7-rc.1 <1.0.0`, `@deepseek-ai/schemastery ^3.18.1-rc.1`) — never the dev-workspace `0.1.0-rc.5` versions. Harness packages version in lockstep",
+          "profile": "<name>",
+          "spec": "dsh-git-credentials",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile <name> add dsh-git-credentials`.",
+          "profile": "<name>",
+          "spec": "dsh-git-credentials",
+          "source": "npm"
+        }
+      ],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-git-credentials@0.6.1",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-npm-unverified",
+        "reason": "npm-version-not-published"
       },
       "auditErrors": [],
       "current": {
@@ -49413,6 +49470,78 @@
         "requiresBuildApproval": true,
         "manualSteps": true,
         "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
+      "repository": "runseal-labs/dsh-tool-runseal",
+      "packageName": "dsh-tool-runseal",
+      "version": "0.2.2",
+      "verifiedCommit": "8c1bf2ef35bad01467e208003eb120424a676753",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-runseal`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.2 downloads **RunSeal 0.2.1** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package. Published plugin 0.2.0 still requires a separately installed executable. RunSeal 0.2.0 predates the native terminal/control contract and is not a supported download target",
+          "profile": "web",
+          "spec": "dsh-tool-runseal",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.1 --registry=https://registry.npmjs.org`. The profile allowed this package's install script and exempted this exact version from pnpm's minimum release age. The bundle was registered, `command` was cleared to an empty string, and dsh was restarted. The plugin page showed version 0.2.1, an empty executable field, and a running RunSeal component.",
+          "profile": "web",
+          "spec": "dsh-tool-runseal@0.2.1",
+          "source": "npm"
+        }
+      ],
+      "targetedCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-runseal`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.2 downloads **RunSeal 0.2.1** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package. Published plugin 0.2.0 still requires a separately installed executable. RunSeal 0.2.0 predates the native terminal/control contract and is not a supported download target",
+          "profile": "web",
+          "spec": "dsh-tool-runseal",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.1 --registry=https://registry.npmjs.org`. The profile allowed this package's install script and exempted this exact version from pnpm's minimum release age. The bundle was registered, `command` was cleared to an empty string, and dsh was restarted. The plugin page showed version 0.2.1, an empty executable field, and a running RunSeal component.",
+          "profile": "web",
+          "spec": "dsh-tool-runseal@0.2.1",
+          "source": "npm"
+        }
+      ],
+      "remoteCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-runseal`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.2 downloads **RunSeal 0.2.1** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package. Published plugin 0.2.0 still requires a separately installed executable. RunSeal 0.2.0 predates the native terminal/control contract and is not a supported download target",
+          "profile": "web",
+          "spec": "dsh-tool-runseal",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.1 --registry=https://registry.npmjs.org`. The profile allowed this package's install script and exempted this exact version from pnpm's minimum release age. The bundle was registered, `command` was cleared to an empty string, and dsh was restarted. The plugin page showed version 0.2.1, an empty executable field, and a running RunSeal component.",
+          "profile": "web",
+          "spec": "dsh-tool-runseal@0.2.1",
+          "source": "npm"
+        }
+      ],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-tool-runseal@0.2.2",
+        "reason": "npm-hard-lifecycle-scripts",
+        "detail": "postinstall"
+      },
+      "assessment": {
+        "outcome": "guided-npm-unverified",
+        "reason": "npm-hard-lifecycle-scripts"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [
+          "postinstall"
+        ],
         "runtimeArtifactsCommitted": false,
         "reviewReasons": []
       }
