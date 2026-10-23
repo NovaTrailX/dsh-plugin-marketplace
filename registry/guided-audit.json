@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T18:42:24.824Z",
-  "total": 1396,
+  "generatedAt": "2026-10-23T23:26:36.433Z",
+  "total": 1397,
   "groups": {
     "remote-command-found": 470,
-    "local-or-unparsed-command-only": 664,
+    "local-or-unparsed-command-only": 665,
     "no-install-command-found": 262
   },
   "rows": [
@@ -12524,7 +12524,7 @@
       "repository": "chnjames/dsh-plugin-market",
       "packageName": "dsh-plugin-market",
       "version": "0.3.0",
-      "verifiedCommit": "478e2deae9d68f614a957a6f99fe2f959e0cd52d",
+      "verifiedCommit": "12e0fc15da7bbecbf4c67241ac315bfae7b5c1d1",
       "readmePath": "README.md",
       "commands": [
         {
@@ -16179,7 +16179,7 @@
       "repository": "dingzhenyao/dsh-plugin-directory",
       "packageName": "dsh-plugin-directory",
       "version": "0.1.0-rc.1",
-      "verifiedCommit": "d88faaef5de1ca9c94c726b7086bcd58ca2c53ca",
+      "verifiedCommit": "c9fc93faaf40ff4f2c27fc8994bd350fb171fd20",
       "readmePath": "README.md",
       "commands": [
         {
@@ -27963,7 +27963,7 @@
       "repository": "jjmlovesgit/dsh-plugin-coding-delegate",
       "packageName": "dsh-plugin-coding-delegate",
       "version": "0.5.10",
-      "verifiedCommit": "6946859b5aa62c11df7a249934877e59903664aa",
+      "verifiedCommit": "e37eb000845ee4157495fc398489a5baf8a6f2b2",
       "readmePath": "README.md",
       "commands": [
         {
@@ -41115,8 +41115,8 @@
     {
       "repository": "NeoXider/neoxider-mcp-hub",
       "packageName": "@neoxider/mcp-hub",
-      "version": "0.8.0",
-      "verifiedCommit": "c354913209f42da72577d5887516080166f35cc8",
+      "version": "0.9.1",
+      "verifiedCommit": "92a2beb536029799784d1866c8162abcb872d1a4",
       "readmePath": "README.md",
       "commands": [
         {
@@ -41144,7 +41144,7 @@
       ],
       "npmVerification": {
         "verified": false,
-        "spec": "@neoxider/mcp-hub@0.8.0",
+        "spec": "@neoxider/mcp-hub@0.9.1",
         "reason": "npm-version-not-published"
       },
       "assessment": {
@@ -45729,6 +45729,55 @@
       "npmVerification": {
         "verified": false,
         "spec": "dsh-github@0.3.0",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-no-matching-remote-command",
+        "reason": "readme-does-not-document-a-remote-install-for-this-package"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
+      "repository": "Player-MINEPIG/dsh-message-console",
+      "packageName": "dsh-message-console",
+      "version": "0.1.11",
+      "verifiedCommit": "a72631c26d960fcad7a18c2ae7b9a9a816f94f29",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile YOUR_DEV_PROFILE add \"dsh-prompt-assembler@https://codeload.github.com/Player-MINEPIG/dsh-prompt-assembler/tar.gz/21183e18c9e8e7f7f01fda04b5af4218ce194539\"",
+          "profile": "YOUR_DEV_PROFILE",
+          "spec": "dsh-prompt-assembler@https://codeload.github.com/Player-MINEPIG/dsh-prompt-assembler/tar.gz/21183e18c9e8e7f7f01fda04b5af4218ce194539",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile YOUR_DEV_PROFILE add \"dsh-jev-plugin@https://codeload.github.com/Player-MINEPIG/dsh-jev-plugin/tar.gz/2ec0510ffcdabe790df8c93b0b40aee07b93c342\"",
+          "profile": "YOUR_DEV_PROFILE",
+          "spec": "dsh-jev-plugin@https://codeload.github.com/Player-MINEPIG/dsh-jev-plugin/tar.gz/2ec0510ffcdabe790df8c93b0b40aee07b93c342",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile YOUR_DEV_PROFILE add /absolute/path/to/dsh-message-console/.local/dsh-message-console-0.1.0.tgz",
+          "profile": "YOUR_DEV_PROFILE",
+          "spec": "/absolute/path/to/dsh-message-console/.local/dsh-message-console-0.1.0.tgz",
+          "source": "local"
+        }
+      ],
+      "targetedCommands": [],
+      "remoteCommands": [],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-message-console@0.1.11",
         "reason": "npm-version-not-published"
       },
       "assessment": {
