@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T19:05:43.891Z",
-  "total": 1404,
+  "generatedAt": "2026-10-24T22:46:36.968Z",
+  "total": 1406,
   "groups": {
-    "remote-command-found": 471,
+    "remote-command-found": 473,
     "local-or-unparsed-command-only": 668,
     "no-install-command-found": 265
   },
@@ -7721,19 +7721,13 @@
     {
       "repository": "beiyege-01/dsh-voice-ai-girlfriend-plugin",
       "packageName": "@beiyege-01/dsh-voice-ai-girlfriend",
-      "version": "0.3.0",
-      "verifiedCommit": "b0ac0fe37abd7a9f1e486d24c9bd1c70d2cd3728",
+      "version": "0.4.0",
+      "verifiedCommit": "f367998b05f03ea3a5babf2ef57e6631065707ab",
       "readmePath": "README.md",
       "commands": [
         {
-          "raw": "dsh plugin add` 安装与样式注入。含数字人（DUIX）控制、DeepSeek 余额 badge（stats 行）、五态麦克风。`dsh plugin add` 即可安装。",
-          "profile": null,
-          "spec": "安装与样式注入。含数字人（DUIX）控制、DeepSeek",
-          "source": "unknown"
-        },
-        {
-          "raw": "dsh plugin --profile web add github:beiyege-01/dsh-voice-ai-girlfriend-plugin",
-          "profile": "web",
+          "raw": "dsh plugin --profile <profile> add github:beiyege-01/dsh-voice-ai-girlfriend-plugin",
+          "profile": "<profile>",
           "spec": "github:beiyege-01/dsh-voice-ai-girlfriend-plugin",
           "source": "unknown"
         }
@@ -7742,7 +7736,7 @@
       "remoteCommands": [],
       "npmVerification": {
         "verified": false,
-        "spec": "@beiyege-01/dsh-voice-ai-girlfriend@0.3.0",
+        "spec": "@beiyege-01/dsh-voice-ai-girlfriend@0.4.0",
         "reason": "npm-version-not-published"
       },
       "assessment": {
@@ -12552,7 +12546,7 @@
       "repository": "chnjames/dsh-plugin-market",
       "packageName": "dsh-plugin-market",
       "version": "0.3.0",
-      "verifiedCommit": "540fc7a18a1fe20f2e1b8f6289eb39fe7388c38a",
+      "verifiedCommit": "c1d9043f2cf5213d74646bae18cdca01a363e1ec",
       "readmePath": "README.md",
       "commands": [
         {
@@ -16207,7 +16201,7 @@
       "repository": "dingzhenyao/dsh-plugin-directory",
       "packageName": "dsh-plugin-directory",
       "version": "0.1.0-rc.1",
-      "verifiedCommit": "7094f45a6958212dab420fb020a03e9dc067ea96",
+      "verifiedCommit": "8f36cb5e808eda5cbdea351d31d13c640a695506",
       "readmePath": "README.md",
       "commands": [
         {
@@ -17954,8 +17948,8 @@
     {
       "repository": "EternalNight996/memory-eternal",
       "packageName": "memory-eternal",
-      "version": "0.16.0",
-      "verifiedCommit": "507ed38783f1f248c567f134a9f7b5b48176d5ac",
+      "version": "0.17.0",
+      "verifiedCommit": "e663462e61a5191cfc2adfeba87ea9d14842df31",
       "readmePath": "README.md",
       "commands": [
         {
@@ -17990,10 +17984,10 @@
       "npmVerification": {
         "verified": true,
         "reason": "exact-npm-tarball-verified",
-        "spec": "memory-eternal@0.16.0",
-        "integrity": "sha512-PWp2yn2gYf4n/mVkz7wjr5WrpUNNsJrxMwV1Ct3WFsqwUPt4QGt2nH1A/+kCYHGpNP3LBvSL5XCFmyE+zm6nlw==",
-        "tarball": "https://registry.npmjs.org/memory-eternal/-/memory-eternal-0.16.0.tgz",
-        "gitHead": "9799097d8ceae43fb37ef64bba4bdbb8d9a1f162",
+        "spec": "memory-eternal@0.17.0",
+        "integrity": "sha512-0tkL1whDepK9Yo72oXh6cNiTqa+yesWvXmaPBTsSYNQb3x3jTeSU7M4CEuGzmlwW1CiG89WPhmdORyfWGmRdbQ==",
+        "tarball": "https://registry.npmjs.org/memory-eternal/-/memory-eternal-0.17.0.tgz",
+        "gitHead": "e663462e61a5191cfc2adfeba87ea9d14842df31",
         "artifactGroups": [
           {
             "label": "host",
@@ -30616,6 +30610,94 @@
       }
     },
     {
+      "repository": "KKL08/dsh-plastic-memory",
+      "packageName": "dsh-plastic-memory",
+      "version": "0.2.0-beta.1",
+      "verifiedCommit": "caeabfa3d4cdb6540019e9ee902abea8fe2f3fe4",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-plastic-memory@0.2.0-beta.1",
+          "profile": "web",
+          "spec": "dsh-plastic-memory@0.2.0-beta.1",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile desktop add dsh-plastic-memory@0.2.0-beta.1",
+          "profile": "desktop",
+          "spec": "dsh-plastic-memory@0.2.0-beta.1",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-plastic-memory`。",
+          "profile": "web",
+          "spec": "dsh-plastic-memory",
+          "source": "npm"
+        }
+      ],
+      "targetedCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-plastic-memory@0.2.0-beta.1",
+          "profile": "web",
+          "spec": "dsh-plastic-memory@0.2.0-beta.1",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile desktop add dsh-plastic-memory@0.2.0-beta.1",
+          "profile": "desktop",
+          "spec": "dsh-plastic-memory@0.2.0-beta.1",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-plastic-memory`。",
+          "profile": "web",
+          "spec": "dsh-plastic-memory",
+          "source": "npm"
+        }
+      ],
+      "remoteCommands": [
+        {
+          "raw": "dsh plugin --profile web add dsh-plastic-memory@0.2.0-beta.1",
+          "profile": "web",
+          "spec": "dsh-plastic-memory@0.2.0-beta.1",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile desktop add dsh-plastic-memory@0.2.0-beta.1",
+          "profile": "desktop",
+          "spec": "dsh-plastic-memory@0.2.0-beta.1",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add dsh-plastic-memory`。",
+          "profile": "web",
+          "spec": "dsh-plastic-memory",
+          "source": "npm"
+        }
+      ],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-plastic-memory@0.2.0-beta.1",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-npm-unverified",
+        "reason": "npm-version-not-published"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "desktop",
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
+      }
+    },
+    {
       "repository": "KL3jd/handwritten-ocr",
       "packageName": "dsh-handwritten-ocr",
       "version": "0.1.0",
@@ -33692,7 +33774,7 @@
       "repository": "liqiming-whu/dsh-status-card",
       "packageName": "dsh-status-card",
       "version": "0.3.2",
-      "verifiedCommit": "4239f88ef53d384b5395e09d9cefafe60d1546a1",
+      "verifiedCommit": "13da2aaee919bc665e83734bf0b29f833c834526",
       "readmePath": "README.md",
       "commands": [
         {
@@ -33702,9 +33784,9 @@
           "source": "npm"
         },
         {
-          "raw": "dsh plugin --profile web add ./dsh-status-card-0.3.1.tgz",
+          "raw": "dsh plugin --profile web add ./dsh-status-card-0.3.2.tgz",
           "profile": "web",
-          "spec": "./dsh-status-card-0.3.1.tgz",
+          "spec": "./dsh-status-card-0.3.2.tgz",
           "source": "local"
         }
       ],
@@ -37186,6 +37268,75 @@
         "reviewReasons": [
           "prepare-and-prebuilt-runtime-found-but-readme-does-not-confirm-github-install"
         ]
+      }
+    },
+    {
+      "repository": "martindye/dsh-voice",
+      "packageName": "@martindye/dsh-voice",
+      "version": "1.0.8",
+      "verifiedCommit": "95d46e7ff288078cbdb949d369b8bbd64fecaaff",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile <profile> add @martindye/dsh-voice",
+          "profile": "<profile>",
+          "spec": "@martindye/dsh-voice",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add @martindye/dsh-voice` for the web",
+          "profile": "web",
+          "spec": "@martindye/dsh-voice",
+          "source": "npm"
+        }
+      ],
+      "targetedCommands": [
+        {
+          "raw": "dsh plugin --profile <profile> add @martindye/dsh-voice",
+          "profile": "<profile>",
+          "spec": "@martindye/dsh-voice",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add @martindye/dsh-voice` for the web",
+          "profile": "web",
+          "spec": "@martindye/dsh-voice",
+          "source": "npm"
+        }
+      ],
+      "remoteCommands": [
+        {
+          "raw": "dsh plugin --profile <profile> add @martindye/dsh-voice",
+          "profile": "<profile>",
+          "spec": "@martindye/dsh-voice",
+          "source": "npm"
+        },
+        {
+          "raw": "dsh plugin --profile web add @martindye/dsh-voice` for the web",
+          "profile": "web",
+          "spec": "@martindye/dsh-voice",
+          "source": "npm"
+        }
+      ],
+      "npmVerification": {
+        "verified": false,
+        "spec": "@martindye/dsh-voice@1.0.8",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-npm-unverified",
+        "reason": "npm-version-not-published"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
       }
     },
     {
@@ -48746,7 +48897,7 @@
       "repository": "reviso-si/reviso-dsh",
       "packageName": "dsh-reviso",
       "version": "0.1.0",
-      "verifiedCommit": "23cc7d27155f5954acd4fd84faf26e4412f33543",
+      "verifiedCommit": "a44c19c8cd7eba726e019c600fd641bcd1925f05",
       "readmePath": "README.md",
       "commands": [
         {
