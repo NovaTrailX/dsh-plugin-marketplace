@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T21:10:30.834Z",
-  "total": 1410,
+  "generatedAt": "2026-10-26T00:41:19.756Z",
+  "total": 1411,
   "groups": {
     "remote-command-found": 483,
     "local-or-unparsed-command-only": 665,
-    "no-install-command-found": 262
+    "no-install-command-found": 263
   },
   "rows": [
     {
@@ -12505,7 +12505,7 @@
       "repository": "chnjames/dsh-plugin-market",
       "packageName": "dsh-plugin-market",
       "version": "0.3.0",
-      "verifiedCommit": "752c5c87e4357fa7b5636664719e45b7be4ec30b",
+      "verifiedCommit": "911044d01ddb484ab10c1ebc30a3cecd7172061d",
       "readmePath": "README.md",
       "commands": [
         {
@@ -18518,7 +18518,7 @@
       "repository": "FeatherHunter/dsh-mattpocock-skills-deck",
       "packageName": "dsh-mattpocock-skills-deck",
       "version": "1.9.0-beta.20",
-      "verifiedCommit": "127b737aa24cf3fd23ac5b7f0df06a778d9935ab",
+      "verifiedCommit": "e9f6e8962b65101cdf519e546aaa16eb86a6b96d",
       "readmePath": "README.md",
       "commands": [
         {
@@ -18601,11 +18601,11 @@
       "npmVerification": {
         "verified": false,
         "spec": "dsh-mattpocock-skills-deck@1.9.0-beta.20",
-        "reason": "npm-version-not-published"
+        "reason": "npm-bundle-patch-mismatch"
       },
       "assessment": {
         "outcome": "guided-npm-unverified",
-        "reason": "npm-version-not-published"
+        "reason": "npm-bundle-patch-mismatch"
       },
       "auditErrors": [],
       "current": {
@@ -20252,6 +20252,38 @@
         "reviewReasons": [
           "readme-documents-github-install-but-runtime-entry-artifacts-are-missing"
         ]
+      }
+    },
+    {
+      "repository": "GaoHu1997/dsh-model-think-level",
+      "packageName": "dsh-model-think-level",
+      "version": "2.0.1",
+      "verifiedCommit": "b2e667f932f50a62c3a2d65b7ae7b8a77344d4fb",
+      "readmePath": "README.md",
+      "commands": [],
+      "targetedCommands": [],
+      "remoteCommands": [],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-model-think-level@2.0.1",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-no-matching-remote-command",
+        "reason": "readme-does-not-document-a-remote-install-for-this-package"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "web"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [
+          "prepare"
+        ],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": []
       }
     },
     {
@@ -27833,47 +27865,6 @@
       }
     },
     {
-      "repository": "jfanfly/bil-yet-next",
-      "packageName": "bil-yet",
-      "version": "0.9.1",
-      "verifiedCommit": "62c82f7b6714d47e709a841b65c5cdbb7bf99769",
-      "readmePath": "README.md",
-      "commands": [
-        {
-          "raw": "dsh plugin --profile desktop add \"D:\\Project\\鱼塘\\bil-yet-0.2.0\"",
-          "profile": "desktop",
-          "spec": "D:\\Project\\鱼塘\\bil-yet-0.2.0",
-          "source": "local"
-        }
-      ],
-      "targetedCommands": [],
-      "remoteCommands": [],
-      "npmVerification": {
-        "verified": false,
-        "spec": "bil-yet@0.9.1",
-        "reason": "npm-version-not-published"
-      },
-      "assessment": {
-        "outcome": "guided-no-matching-remote-command",
-        "reason": "readme-does-not-document-a-remote-install-for-this-package"
-      },
-      "auditErrors": [],
-      "current": {
-        "profiles": [
-          "web"
-        ],
-        "requiresBuildApproval": true,
-        "manualSteps": true,
-        "lifecycleScripts": [
-          "prepare"
-        ],
-        "runtimeArtifactsCommitted": true,
-        "reviewReasons": [
-          "prepare-and-prebuilt-runtime-found-but-readme-does-not-confirm-github-install"
-        ]
-      }
-    },
-    {
       "repository": "Jian-Sparrow/dsh-plugin-mission-control",
       "packageName": "dsh-plugin-mission-control",
       "version": "0.3.1",
@@ -28761,7 +28752,7 @@
       "repository": "Johnly1986/AmberFlow",
       "packageName": "amberflow",
       "version": "1.0.0",
-      "verifiedCommit": "095bd0d9c960b256b7abeb18702f730ed6366d9b",
+      "verifiedCommit": "a0b950596e1c9e22afe8d432e814401d4bd997f1",
       "readmePath": "README.md",
       "commands": [
         {
@@ -49318,7 +49309,7 @@
       "repository": "reviso-si/reviso-dsh",
       "packageName": "dsh-reviso",
       "version": "0.1.0",
-      "verifiedCommit": "a44c19c8cd7eba726e019c600fd641bcd1925f05",
+      "verifiedCommit": "f18a2b4635fc6b4a0a13aedb05664f2ccd2993c9",
       "readmePath": "README.md",
       "commands": [
         {
@@ -49820,6 +49811,53 @@
       }
     },
     {
+      "repository": "rootsbymenda/dsh-second-angle",
+      "packageName": "dsh-second-angle",
+      "version": "0.1.0",
+      "verifiedCommit": "9f9cde6ba25455f11a343b1ff0db038eb23e85bd",
+      "readmePath": "README.md",
+      "commands": [
+        {
+          "raw": "dsh plugin --profile headless add ./dsh-second-angle-0.1.0.tgz",
+          "profile": "headless",
+          "spec": "./dsh-second-angle-0.1.0.tgz",
+          "source": "local"
+        },
+        {
+          "raw": "dsh plugin --profile headless add github:rootsbymenda/dsh-second-angle#<commit>",
+          "profile": "headless",
+          "spec": "github:rootsbymenda/dsh-second-angle#<commit>",
+          "source": "unknown"
+        }
+      ],
+      "targetedCommands": [],
+      "remoteCommands": [],
+      "npmVerification": {
+        "verified": false,
+        "spec": "dsh-second-angle@0.1.0",
+        "reason": "npm-version-not-published"
+      },
+      "assessment": {
+        "outcome": "guided-no-matching-remote-command",
+        "reason": "readme-does-not-document-a-remote-install-for-this-package"
+      },
+      "auditErrors": [],
+      "current": {
+        "profiles": [
+          "headless"
+        ],
+        "requiresBuildApproval": true,
+        "manualSteps": true,
+        "lifecycleScripts": [
+          "prepare"
+        ],
+        "runtimeArtifactsCommitted": false,
+        "reviewReasons": [
+          "readme-documents-github-install-but-runtime-entry-artifacts-are-missing"
+        ]
+      }
+    },
+    {
       "repository": "royenheart/dsh-plugin-mcp-support",
       "packageName": "@royenheart/dsh-plugin-mcp-support",
       "version": "0.1.0",
@@ -50047,7 +50085,7 @@
       "repository": "rqwj/oh-my-ticket",
       "packageName": "dsh-oh-my-ticket",
       "version": "0.6.6",
-      "verifiedCommit": "cac5d7500d592fd6dd285817eb7b1edf493b9060",
+      "verifiedCommit": "185d3b2621bcd6d754d89d00877f481602efe667",
       "readmePath": "README.md",
       "commands": [
         {
@@ -50376,54 +50414,36 @@
     {
       "repository": "runseal-labs/dsh-tool-runseal",
       "packageName": "dsh-tool-runseal",
-      "version": "0.2.2",
-      "verifiedCommit": "8c1bf2ef35bad01467e208003eb120424a676753",
+      "version": "0.2.6",
+      "verifiedCommit": "ec5e71e5b539f24dc2b2f256ced45698a13421d7",
       "readmePath": "README.md",
       "commands": [
         {
-          "raw": "dsh plugin --profile web add dsh-tool-runseal`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.2 downloads **RunSeal 0.2.1** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package. Published plugin 0.2.0 still requires a separately installed executable. RunSeal 0.2.0 predates the native terminal/control contract and is not a supported download target",
+          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.6`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.6 downloads **RunSeal 0.2.3** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package.",
           "profile": "web",
-          "spec": "dsh-tool-runseal",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.1 --registry=https://registry.npmjs.org`. The profile allowed this package's install script and exempted this exact version from pnpm's minimum release age. The bundle was registered, `command` was cleared to an empty string, and dsh was restarted. The plugin page showed version 0.2.1, an empty executable field, and a running RunSeal component.",
-          "profile": "web",
-          "spec": "dsh-tool-runseal@0.2.1",
+          "spec": "dsh-tool-runseal@0.2.6",
           "source": "npm"
         }
       ],
       "targetedCommands": [
         {
-          "raw": "dsh plugin --profile web add dsh-tool-runseal`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.2 downloads **RunSeal 0.2.1** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package. Published plugin 0.2.0 still requires a separately installed executable. RunSeal 0.2.0 predates the native terminal/control contract and is not a supported download target",
+          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.6`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.6 downloads **RunSeal 0.2.3** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package.",
           "profile": "web",
-          "spec": "dsh-tool-runseal",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.1 --registry=https://registry.npmjs.org`. The profile allowed this package's install script and exempted this exact version from pnpm's minimum release age. The bundle was registered, `command` was cleared to an empty string, and dsh was restarted. The plugin page showed version 0.2.1, an empty executable field, and a running RunSeal component.",
-          "profile": "web",
-          "spec": "dsh-tool-runseal@0.2.1",
+          "spec": "dsh-tool-runseal@0.2.6",
           "source": "npm"
         }
       ],
       "remoteCommands": [
         {
-          "raw": "dsh plugin --profile web add dsh-tool-runseal`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.2 downloads **RunSeal 0.2.1** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package. Published plugin 0.2.0 still requires a separately installed executable. RunSeal 0.2.0 predates the native terminal/control contract and is not a supported download target",
+          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.6`, then restart dsh and open Plugins → RunSeal. Plugin 0.2.6 downloads **RunSeal 0.2.3** during npm's `postinstall`, selects the current OS and architecture, verifies the release archive's SHA-256 checksum, and installs the executable and Windows helpers together inside the package.",
           "profile": "web",
-          "spec": "dsh-tool-runseal",
-          "source": "npm"
-        },
-        {
-          "raw": "dsh plugin --profile web add dsh-tool-runseal@0.2.1 --registry=https://registry.npmjs.org`. The profile allowed this package's install script and exempted this exact version from pnpm's minimum release age. The bundle was registered, `command` was cleared to an empty string, and dsh was restarted. The plugin page showed version 0.2.1, an empty executable field, and a running RunSeal component.",
-          "profile": "web",
-          "spec": "dsh-tool-runseal@0.2.1",
+          "spec": "dsh-tool-runseal@0.2.6",
           "source": "npm"
         }
       ],
       "npmVerification": {
         "verified": false,
-        "spec": "dsh-tool-runseal@0.2.2",
+        "spec": "dsh-tool-runseal@0.2.6",
         "reason": "npm-hard-lifecycle-scripts",
         "detail": "postinstall"
       },
